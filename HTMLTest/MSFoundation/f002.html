@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Foundation 文本</title>
+    <!--为了确保页面可自由缩放可以在 <head> 元素中添加以下 <meta> 标签:-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- css 文件 -->
+    <link rel="stylesheet" href="http://static.runoob.com/assets/foundation-5.5.3/foundation.min.css">
+    <!-- jQuery 库 -->
+    <script src="http://static.runoob.com/assets/jquery/2.0.3/jquery.min.js"></script>
+    <!-- JavaScript 文件 -->
+    <script src="http://static.runoob.com/assets/foundation-5.5.3/js/foundation.min.js"></script>
+    <!-- modernizr 文件 -->
+    <!--Modernizr 是一个用于检测用户浏览器HTML5和CSS3特性的JavaScript库 - 让组件能在所有浏览器上正常运行。-->
+    <script src="http://static.runoob.com/assets/foundation-5.5.3/js/vendor/modernizr.js"></script>
+
+
+    <!--使用图标我们需要在 <head> 部分添加图标的样式文件-->
+    <link rel="stylesheet" href="http://static.runoob.com/assets/foundation-icons/foundation-icons.css">
+
+    <style>
+        .percentage {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            color: white;
+            transform: translate(-50%, -50%);
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+<div style="padding:20px;">
+    <h2>标题</h2>
+    <p>标题不同元素字体大小不一样。以下字体默认加粗，不同设备尺寸显示的字体也是不一样的，你可以通过重置浏览器窗口大小查看效果。</p>
+    <h1>h1 标题 (<strong>2.125rem</strong> - 2.75rem)</h1>
+    <h2>h2 标题 (<strong>1.6875rem</strong> - 2.3125rem)</h2>
+    <h3>h3 标题 (<strong>1.375rem</strong> - 1.6875rem)</h3>
+    <h4>h4 标题 (<strong>1.125rem</strong> - 1.4375rem)</h4>
+    <h5>h5 标题 (1.125rem)</h5>
+    <h6>h6 标题 (1rem)</h6>
+</div>
+<div style="padding:20px;">
+<h2>副标题</h2>
+<p> .subheader 类让标题的文本颜色变浅。</p>
+<h1 class="subheader">h1.subheader</h1>
+<h2 class="subheader">h2.subheader</h2>
+<h3 class="subheader">h3.subheader</h3>
+<h4 class="subheader">h4.subheader</h4>
+<h5 class="subheader">h5.subheader</h5>
+<h6 class="subheader">h6.subheader</h6>
+</div>
+<div style="padding:20px;">
+    <h2>Small</h2>
+    <p>small 元素用于创建一个浅色的副标题。</p>
+    <h1>h1 heading <small>secondary text</small></h1>
+    <h2>h2 heading <small>secondary text</small></h2>
+    <h3>h3 heading <small>secondary text</small></h3>
+    <h4>h4 heading <small>secondary text</small></h4>
+    <h5>h5 heading <small>secondary text</small></h5>
+    <h6>h6 heading <small>secondary text</small></h6>
+</div>
+
+<div style="padding:20px;">
+    <h2>链接</h2>
+    <p>Foundation 的 <a href="#">链接样式</a>。</p>
+</div>
+
+<div style="padding:20px;">
+    <h2>Abbreviations 简称或缩写</h2>
+    <p>abbr 元素用于标签指示简称或缩写。</p>
+    <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+</div>
+
+<div style="padding:20px;">
+    <h2>引用</h2>
+    <p>blockquote 元素用于定义块引用。</p>
+    <blockquote>
+        <p>学的不仅是技术，更是梦想！</p>
+        <cite>菜鸟教程</cite>
+    </blockquote>
+</div>
+
+<div style="padding:20px;">
+    <h2>描述列表</h2>
+    <p>dl 元素用于定义一个描述性列表：</p>
+    <dl>
+        <dt>Coffee</dt>
+        <dd>- black hot drink</dd>
+        <dt>Milk</dt>
+        <dd>- white cold drink</dd>
+    </dl>
+</div>
+
+<div style="padding:20px;">
+    <h2>Code 片段</h2>
+    <p>代码片段展示可以使用 code 元素:</p>
+    <p>以下 HTML 元素: <code>span</code>, <code>section</code>, 和 <code>div</code> 是文档的一部分。</p>
+</div>
+
+<div style="padding:20px;">
+    <h2>键盘输入</h2>
+    <p>使用 kbd 元素来接收键盘的输入指令:</p>
+    <p>按下 <kbd>ctrl + p</kbd> 键打开打印窗口。</p>
+</div>
+
+<div style="padding:20px;">
+    <h2>水平线</h2>
+    <p>Foundation 中 hr 元素是灰色的。</p>
+    <hr>
+</div>
+
+<h2>响应式表格</h2>
+<p>在 div 元素上添加 overflow-x:auto 样式，让它支持响应式。</p>
+<p>重置浏览器窗口查看效果 (如果空间不足会出现垂直滚动条)。</p>
+<div class="responsive" style="overflow-x:hidden">
+    <table>
+        <thead>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Email</th>
+            <th>City</th>
+            <th>Age</th>
+            <th>Country</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>john@example.com</td>
+            <td>New York</td>
+            <td>35</td>
+            <td>USA</td>
+        </tr>
+        <tr>
+            <td>Mary</td>
+            <td>Moe</td>
+            <td>mary@example.com</td>
+            <td>Chicago</td>
+            <td>51</td>
+            <td>USA</td>
+        </tr>
+        <tr>
+            <td>July</td>
+            <td>Dooley</td>
+            <td>july@example.com</td>
+            <td>San Francisco</td>
+            <td>38</td>
+            <td>USA</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<h1>按钮</h1>
+<p>按钮类可以使用在 &lt;a&gt;, &lt;button&gt;, 或 &lt;input&gt; 元素</p>
+<div style="padding:20px;">
+    <h2>按钮样式</h2>
+    <button type="button" class="button">Default</button>
+    <button type="button" class="button secondary">Secondary</button>
+    <button type="button" class="button success">Success</button>
+    <button type="button" class="button info">Info</button>
+    <button type="button" class="button warning">Warning</button>
+    <button type="button" class="button alert">Alert</button>
+</div>
+<div style="padding:20px;">
+    <h2>按钮元素</h2>
+    <a href="#" class="button info" role="button">链接按钮</a>
+    <button type="button" class="button info">按钮</button>
+    <input type="button" class="button info" value="Input 按钮">
+    <input type="submit" class="button info" value="Submit 按钮">
+</div>
+<div style="padding:20px;">
+    <h2>按钮大小</h2>
+    <button type="button" class="button large">Large</button>
+    <button type="button" class="button">Default</button>
+    <button type="button" class="button small">Small</button>
+    <button type="button" class="button tiny">Tiny</button>
+</div>
+<div style="padding:20px;">
+    <h2>圆角按钮</h2>
+    <button type="button" class="button">Default Button</button>
+    <button type="button" class="button radius">Radius Button</button>
+    <button type="button" class="button round">Round Button</button>
+</div>
+<button type="button" class="button">Default Button</button>
+<button type="button" class="button expand">Expanded Button</button>
+<button type="button" class="button disabled">Disabled Button</button>
+
+<h2>按钮组 .button-group 类</h2>
+<ul class="button-group">
+    <li><button type="button" class="button">Apple</button></li>
+    <li><button type="button" class="button">Samsung</button></li>
+    <li><button type="button" class="button">Sony</button></li>
+</ul>
+<h2>垂直按钮组使用 .stack 类来创建</h2>
+<ul class="button-group stack">
+    <li><button type="button" class="button">Apple</button></li>
+    <li><button type="button" class="button">Samsung</button></li>
+    <li><button type="button" class="button">Sony</button></li>
+</ul>
+<h2>.stack-for-small 类用于小尺寸的屏幕，按钮有水平排列变为垂直排列</h2>
+<ul class="button-group stack-for-small">
+    <li><button type="button" class="button">Apple</button></li>
+    <li><button type="button" class="button">Samsung</button></li>
+    <li><button type="button" class="button">Sony</button></li>
+</ul>
+
+<div style="padding:20px;">
+    <h2>圆角按钮组</h2>
+    <p>圆角按钮组:</p>
+    <ul class="button-group radius">
+        <li><button type="button" class="button">Apple</button></li>
+        <li><button type="button" class="button">Samsung</button></li>
+        <li><button type="button" class="button">Sony</button></li>
+    </ul>
+
+    <p>圆形按钮组:</p>
+    <ul class="button-group round">
+        <li><button type="button" class="button">Apple</button></li>
+        <li><button type="button" class="button">Samsung</button></li>
+        <li><button type="button" class="button">Sony</button></li>
+    </ul>
+</div>
+
+<h3>均匀延展按钮组:</h3>
+
+<p>均匀延展三个按钮:</p>
+<ul class="button-group even-3">
+    <li><button type="button" class="button">Apple</button></li>
+    <li><button type="button" class="button">Samsung</button></li>
+    <li><button type="button" class="button">Sony</button></li>
+</ul>
+
+<p>均匀延展五个按钮:</p>
+<ul class="button-group even-5">
+    <li><button type="button" class="button">Apple</button></li>
+    <li><button type="button" class="button">Samsung</button></li>
+    <li><button type="button" class="button">Sony</button></li>
+    <li><button type="button" class="button">HTC</button></li>
+    <li><button type="button" class="button">Huawei</button></li>
+</ul>
+
+<p>均匀延展八个按钮:</p>
+<ul class="button-group even-8">
+    <li><button type="button" class="button">A</button></li>
+    <li><button type="button" class="button">B</button></li>
+    <li><button type="button" class="button">C</button></li>
+    <li><button type="button" class="button">D</button></li>
+    <li><button type="button" class="button">E</button></li>
+    <li><button type="button" class="button">F</button></li>
+    <li><button type="button" class="button">G</button></li>
+    <li><button type="button" class="button">H</button></li>
+</ul>
+
+<h1>下拉按钮</h1>
+<div style="padding:20px;">
+    <h2>下拉菜单按钮</h2>
+    <a href="#" data-dropdown="id01" class="button dropdown">Dropdown Button</a>
+    <ul id="id01" data-dropdown-content class="f-dropdown">
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+    </ul>
+</div>
+<!-- 初始化 Foundation JS -->
+<script>
+    $(document).ready(function() {
+        $(document).foundation();
+    })
+</script>
+
+<div style="padding:20px;">
+    <h2>图标实例</h2>
+    <p>Cloud icon: <i class="fi-cloud"></i></p>
+    <p>Cloud icon as a link:
+        <a href="#"><i class="fi-cloud"></i></a>
+    </p>
+    <p>Styled Cloud icon: <i class="fi-cloud" style="font-size:35px;color:red;"></i></p>
+    <p>Home icon: <i class="fi-home"></i></p>
+    <p>Home icon on a button:
+        <button type="button" class="button">
+            <i class="fi-home"></i> Home
+        </button>
+    </p>
+    <p>Home icon on a green button:
+        <button type="button" class="button success">
+            <i class="fi-home"></i> Home
+        </button>
+    </p>
+    <p>Home icon on a large, light blue link button:
+        <a href="#" class="button info large">
+            <i class="fi-home"></i> Home
+        </a>
+    </p>
+</div>
+
+<h2>图标工具栏</h2>
+<p>.disabled 类可以让图标变成不可点击状态</p>
+<div class="icon-bar five-up">
+    <a href="#" class="item">
+        <i class="fi-home"></i>
+        <label>Home</label>
+    </a>
+    <a href="#" class="item disabled">
+        <i class="fi-share"></i>
+        <label>Share</label>
+    </a>
+    <a href="#" class="item">
+        <i class="fi-info"></i>
+        <label>Info</label>
+    </a>
+    <a href="#" class="item disabled">
+        <i class="fi-mail"></i>
+        <label>Mail</label>
+    </a>
+    <a href="#" class="item">
+        <i class="fi-magnifying-glass"></i>
+        <label>Search</label>
+    </a>
+</div>
+
+
+<h2>图标工具栏</h2>
+<p>.vertical 类用于创建一个垂直的工具栏</p>
+<div class="icon-bar vertical five-up">
+    <a href="#" class="item">
+        <i class="fi-home"></i>
+    </a>
+    <a href="#" class="item">
+        <i class="fi-share"></i>
+    </a>
+    <a href="#" class="item">
+        <i class="fi-info"></i>
+    </a>
+    <a href="#" class="item">
+        <i class="fi-mail"></i>
+    </a>
+    <a href="#" class="item">
+        <i class="fi-magnifying-glass"></i>
+    </a>
+</div>
+
+<h1>可以使用 CSS 来修改标签的大小</h1>
+<h1>Example <span class="label" style="font-size:36px;">New</span></h1>
+<h2>Example <span class="label" style="font-size:30px;">New</span></h2>
+<h3>Example <span class="label" style="font-size:20px;">New</span></h3>
+<h4>Example <span class="label">New</span></h4>
+
+<h1>关闭提醒框</h1>
+<div data-alert class="alert-box success round">
+    This is a default alert box with closing functionality.
+    <a href="#" class="close">&times;</a>
+</div>
+<script>
+    // Initialize Foundation JS For Functionality
+    $(document).ready(function() {
+        $(document).foundation();
+    })
+</script>
+
+
+<div style="padding:20px;">
+    <h2>进度条标签</h2>
+    <div class="progress">
+    <span class="meter" style="position:relative;width:75%">
+      <span class="percentage">75%</span>
+    </span>
+    </div>
+
+    <div class="progress success">
+    <span class="meter" style="position:relative;width:50%">
+      <span class="percentage">50%</span>
+    </span>
+    </div>
+
+    <div class="progress alert">
+    <span class="meter" style="position:relative;width:25%">
+      <span class="percentage">25%</span>
+    </span>
+    </div>
+</div>
+</body>
+</html>

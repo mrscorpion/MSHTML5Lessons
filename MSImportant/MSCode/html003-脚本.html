@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>脚本</title>
+
+    <style type="text/css">
+        h1 {color:red;}
+        h2 {color:orangered;}
+        p {color:blue;}
+    </style>
+</head>
+<body>
+<!--
+JavaScript 最常用于图片操作、表单验证以及内容动态更新
+
+<noscript> 标签提供无法使用脚本时的替代内容，比方在浏览器禁用脚本时，或浏览器不支持客户端脚本时。
+<noscript>元素可包含普通 HTML 页面的 body 元素中能够找到的所有元素。
+只有在浏览器不支持脚本或者禁用脚本时，才会显示 <noscript> 元素中的内容
+-->
+
+<script>
+    document.write("mr.scorpion")
+</script>
+<noscript>抱歉，你的浏览器不支持 JavaScript!</noscript>
+<h2>如何应对不支持脚本或禁用脚本的浏览器?</h2>
+<p>不支持 JavaScript 的浏览器会使用 &lt;noscript&gt; 元素中定义的内容（文本）来替代。</p>
+
+<br><br>
+<h2>JavaScript可以直接在HTML输出</h2>
+<script>
+    document.write("<h1>这是一个标题</h1>");
+    document.write("<p>这是一个段落。</p>");
+</script>
+<p>
+    您只能在 HTML 输出流中使用 <strong>document.write</strong>。
+    如果您在文档已加载后使用它（比如在函数中），会覆盖整个文档。
+</p>
+
+<br><br>
+<h2 id="event">JavaScript 事件响应</h2>
+<script>
+    function eventFun() {
+        document.getElementById("event").innerHTML="MR SCORPION";
+    }
+</script>
+<button type="button" onclick="eventFun()">点击查看事件</button>
+<br><br>
+
+<h3 id="event2">JavaScript 改变 HTML 元素的样式</h3>
+<script>
+    function changeFun() {
+        x=document.getElementById("event2");
+        x.style.color="#ff0000";
+    }
+</script>
+<button type="button" onclick="changeFun()">点击查看改变样式</button>
+
+<hr>
+<h1>字符实体</h1>
+<p>&nbsp;&nbsp;&nbsp;前面有三个空格" " 不间断空格(Non-breaking Space)</p>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /* 【方式1】添加多张背景图，最前面的显示在最上面 */
+        #example1 {
+            background-image: url(../music.png), url(../test.png);
+            background-position: right bottom, left top;
+            background-repeat: no-repeat, repeat;
+            padding: 15px;
+        }
+
+        /* 【方式2】添加多张背景图，最前面的显示在最上面 */
+        #example2 {
+            background: url(../music.png) right bottom no-repeat, url(../test.png) left top repeat;
+            padding: 15px;
+        }
+
+        div
+        {
+            border:1px solid black;
+            padding:35px;
+            background-image:url('../music.png');
+            background-repeat:no-repeat;
+            background-position:left;
+        }
+        #div1
+        {
+            background-origin:border-box;
+        }
+        #div2
+        {
+            background-origin:content-box;
+        }
+    </style>
+</head>
+<body>
+<div id="example1">
+    <h1>方式1 Lorem Ipsum Dolor</h1>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+    <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<br>
+<div id="example2">
+    <h1>方式2 Lorem Ipsum Dolor</h1>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+    <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<!-- 指定了背景图像的位置区域  在 content-box 中定位背景图片 -->
+<p>背景图像边界框的相对位置：</p>
+<div id="div1">
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+</div>
+
+<p>背景图像的相对位置的内容框：</p>
+<div id="div2">
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+</div>
+</body>
+</html>

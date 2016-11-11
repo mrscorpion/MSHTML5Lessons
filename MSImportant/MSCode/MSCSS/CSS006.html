@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 下拉列表</title>
+    <style>
+        .dropbtn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            right: 0;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {background-color: #f1f1f1}
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #3e8e41;
+        }
+
+
+
+        /* 下拉列表2 */
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a, .dropbtn2 {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover, .dropdown2:hover .dropbtn2 {
+            background-color: #111;
+        }
+
+        .dropdown2 {
+            display: inline-block;
+        }
+
+        .dropdown-content2 {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        }
+
+        .dropdown-content2 a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content2 a:hover {background-color: #f1f1f1}
+
+        .dropdown2:hover .dropdown-content2 {
+            display: block;
+        }
+
+
+        /* 图片廊 */
+        div.img
+        {
+            margin: 2px;
+            border: 1px solid #0000ff;
+            height: auto;
+            width: auto;
+            float: left;
+            text-align: center;
+        }
+        div.img img
+        {
+            display: inline;
+            margin: 3px;
+            border: 1px solid #ffffff;
+        }
+        div.img a:hover img {border: 1px solid #0000ff;}
+        div.desc
+        {
+            text-align: center;
+            font-weight: normal;
+            width: 120px;
+            margin: 2px;
+        }
+
+        p.img2
+        {
+            clear:both;  /* 清除浮动 */
+        }
+        img.img2
+        {
+            opacity:0.4;
+            filter:alpha(opacity=40); /* 适用 IE8 及其更早版本 */
+        }
+        img.img2:hover
+        {
+            opacity:1.0;
+            filter:alpha(opacity=100); /* 适用 IE8 及其更早版本 */
+        }
+    </style>
+</head>
+<body>
+<h1>下拉列表1</h1>
+<h2>下拉内容的对齐方式</h2>
+<p>left 和 right 属性指定了下拉内容是从左到右或从右到左。</p>
+
+<div class="dropdown" style="float:left;">
+    <button class="dropbtn">左</button>
+    <div class="dropdown-content" style="left:0;">
+        <a href="#">菜鸟教程 1</a>
+        <a href="#">菜鸟教程 2</a>
+        <a href="#">菜鸟教程 3</a>
+    </div>
+</div>
+
+<div class="dropdown" style="float:right;">
+    <button class="dropbtn">右</button>
+    <div class="dropdown-content">
+        <a href="#">菜鸟教程 1</a>
+        <a href="#">菜鸟教程 2</a>
+        <a href="#">菜鸟教程 3</a>
+    </div>
+</div>
+
+
+<br><br><br>
+<h1>下拉列表2</h1>
+<ul>
+    <li><a class="active" href="#">主页</a></li>
+    <li><a href="#">新闻</a></li>
+    <div class="dropdown2">
+        <a href="#" class="dropbtn2">下拉菜单</a>
+        <div class="dropdown-content2">
+            <a href="#">链接 1</a>
+            <a href="#">链接 2</a>
+            <a href="#">链接 3</a>
+        </div>
+    </div>
+</ul>
+
+<h3>导航栏上的下拉菜单</h3>
+<p>鼠标移动到 "下拉菜单" 链接先显示下拉菜单。</p>
+
+
+<h1>图片廊</h1>
+<div class="img">
+    <a target="_blank" href="#"><img src="music.png" alt="Klematis" width="110" height="90"></a>
+    <div class="desc">Add a description of the image here</div>
+</div>
+<div class="img">
+    <a target="_blank" href="#"><img src="music.png" alt="Klematis" width="110" height="90"></a>
+    <div class="desc">Add a description of the image here</div>
+</div>
+<div class="img">
+    <a target="_blank" href="#"><img src="music.png" alt="Klematis" width="110" height="90"></a>
+    <div class="desc">Add a description of the image here</div>
+</div>
+<div class="img">
+    <a target="_blank" href="#"><img src="music.png" alt="Klematis" width="110" height="90"></a>
+    <div class="desc">Add a description of the image here</div>
+</div>
+
+<br><br><br>
+<p class="img2" style="font-weight:bold ">说明:这里需要先清除clear上面图片的浮动样式</p>
+<h1>图片透明度</h1>
+<p>opacity 属性通常与 :hover 选择器一起使用，在鼠标移动到图片上后改变图片的透明度：</p>
+<img class="img2" src="test.png" width="150" height="113" alt="klematis">
+<img class="img2" src="test.png" width="150" height="113" alt="klematis">
+<p><b>注意:</b>在 IE 中必须声明 &lt;!DOCTYPE&gt; 才能保证 :hover 选择器能够有效。</p>
+</body>
+</html>

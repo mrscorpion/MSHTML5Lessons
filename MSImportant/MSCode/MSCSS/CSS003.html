@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 分组 和 嵌套 选择器</title>
+
+    <!-- 分组选择器 -->
+    <style>
+        h1,h2
+        {
+            color:green;
+        }
+
+        /* 嵌套选择器 */
+        p
+        {
+            color:blue;
+            text-align:center;
+        }
+        .marked
+        {
+            background-color:red;
+        }
+        .marked p
+        {
+            color:white;
+        }
+
+        li{display:inline;}
+
+        span
+        {
+            display:block;
+        }
+
+        h6
+        {
+            position:absolute;
+            left:100px;
+            top:150px;
+        }
+    </style>
+</head>
+<body>
+<!--
+为所有p元素指定一个样式
+为所有class="marked"的元素指定一个样式
+为所有class="marked"元素内的p元素指定一个样式
+-->
+
+<h1>分组选择器</h1>
+<h2>分组选择器</h2>
+<p>嵌套选择器 - 这个段落是蓝色文本，居中对齐。</p>
+<div class="marked">
+    <p>这个段落不是蓝色文本。</p>
+</div>
+<p>所有 class="marked"元素内的 p 元素指定一个样式，但有不同的文本颜色。</p>
+
+<h1>链接列表水平显示：【把列表项显示为内联元素 display:inline; 】</h1>
+<ul>
+    <li><a href="#" target="_blank">HTML</a></li>
+    <li><a href="#" target="_blank">CSS</a></li>
+    <li><a href="#" target="_blank">JavaScript</a></li>
+    <li><a href="#" target="_blank">XML</a></li>
+</ul>
+
+<h1>把span元素作为块元素</h1>
+<h2>Nirvana</h2>
+<span>Record: MTV Unplugged in New York</span>
+<span>Year: 1993</span>
+<h2>Radiohead</h2>
+<span>Record: OK Computer</span>
+<span>Year: 1997</span>
+
+
+<h6>这是一个绝对定位了的标题</h6>
+</body>
+</html>

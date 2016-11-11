@@ -1,0 +1,52 @@
+/*
+使用简写属性时，属性值的顺序为：:
+background-color
+background-image
+background-repeat
+background-attachment
+background-position
+
+CSS 背景属性
+background	简写属性，作用是将背景属性设置在一个声明中。
+background-attachment	背景图像是否固定或者随着页面的其余部分滚动。
+background-color	设置元素的背景颜色。
+background-image	把图像设置为背景。
+background-position	设置背景图像的起始位置。
+background-repeat	设置背景图像是否及如何重复。
+
+当text-align设置为"justify"，每一行被展开为宽度相等，左，右外边距是对齐（如杂志和报纸）。
+*/
+body
+{
+    background:#ffffff url('test.png') no-repeat right top;
+    margin-right:200px;
+    background-attachment:fixed;
+}
+h1 {color:#00ff00; text-align:center;}
+h2 {color:rgb(255,0,0);}
+p {text-indent:50px;}
+p.date {text-align:right;}
+p.main {text-align:justify;}
+p.uppercase {text-transform:uppercase;}
+p.lowercase {text-transform:lowercase;}
+p.capitalize {text-transform:capitalize;}
+
+h3 {text-decoration:overline;}
+h4 {text-decoration:line-through;}
+h5 {text-decoration:underline;}
+
+a.test:link,a.test:visited
+{
+    display:block;
+    font-weight:bold;
+    color:#FFFFFF;
+    background-color:#98bf21;
+    width:120px;
+    text-align:center;
+    padding:4px;
+    text-decoration:none;
+}
+a.test:hover,a.test:active
+{
+    background-color:#7A991A;
+}

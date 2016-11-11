@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>CSS Demo</title>
+
+    <!-- 外部样式 -->
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+
+    <!-- 内部样式 -->
+    <style>
+        hr   {color:navy;}
+        h1
+        {
+            font-size:36pt;
+            color:orange;
+            text-align:center;
+        }
+        h2   {color:blue;}
+        h3
+        {
+            text-align:right;
+            font-size:20pt;
+        }
+        p
+        {
+            font-family:"Times New Roman";
+            font-size:20px;
+        }
+        a:link    {color:green;}
+        a:visited {color:yellow;}
+        a:hover   {color:black;}
+        a:active  {color:blue;}
+
+        div
+        {
+            background-color:#b0c4de;
+        }
+
+        #id1
+        {
+            text-align:center;
+            color:red;
+        }
+
+        .class1
+        {
+            text-align:center;
+            color: #ff00ee;
+        }
+    </style>
+</head>
+
+<body>
+<!--
+CSS 指层叠样式表 (Cascading Style Sheets)
+
+类名的第一个字符不能使用数字！它无法在 Mozilla 或 Firefox 中起作用。
+
+多重样式
+如果某些属性在不同的样式表中被同样的选择器定义，那么属性值将从更具体的样式表中被继承过来。
+一般而言，所有的样式会根据下面的规则层叠于一个新的虚拟样式表中，其中数字 4 拥有最高的优先权。
+浏览器缺省设置
+外部样式表
+内部样式表（位于 <head> 标签内部）
+内联样式（在 HTML 元素内部）
+因此，内联样式（在 HTML 元素内部）拥有最高的优先权，这意味着它将优先于以下的样式声明： 标签中的样式声明，外部样式表中的样式声明，或者浏览器中的样式声明（缺省值）。
+Remark提示:如果你使用了外部文件的样式在 <head>中也定义了该样式，则内部样式表会取代外部文件的样式。
+
+背景图像 - 水平或垂直平铺
+默认情况下 background-image 属性会在页面的水平或者垂直方向平铺。
+一些图像如果在水平方向与垂直方向平铺，这样看起来很不协调
+如果图像只在水平方向平铺 (repeat-x), 页面背景会更好些
+如果不想让图像平铺 background-repeat:no-repeat;
+-->
+<h1>CSS 实例!</h1>
+<p>这是一个段落。</p>
+<hr>
+<p>
+    <a href="http://mrscorpion.github.io"
+      target="_blank">This is a link
+    </a>
+</p>
+
+
+<br><br>
+<h1>CSS   id 和 class 选择器</h1>
+<p>id 选择器可以为标有特定 id 的 HTML 元素指定特定的样式</p>
+<p>class 选择器用于描述一组元素的样式，class 选择器有别于id选择器，class可以在多个元素中使用。</p>
+<br>
+<h2 id="id1">1.id 选择器</h2>
+<p style="text-align: center">ID属性不要以数字开头，数字开头的ID在 Mozilla/Firefox 浏览器中不起作用</p>
+<p style="text-align: center">HTML元素以id属性来设置id选择器,CSS 中 id 选择器以 "#" 来定义</p>
+
+<br><br>
+<h2 class="class1">2.class 选择器</h2>
+<p class="class1">class 选择器在HTML中以class属性表示, 在 CSS 中，类选择器以一个点"."号显示</p>
+
+<br><br>
+<h3>多重样式</h3>
+</body>
+</html>
+

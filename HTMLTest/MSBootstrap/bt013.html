@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Bootstrap 实例 - 标签页（Tab）插件</title>
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<ul id="myTab" class="nav nav-tabs">
+    <li class="active"><a href="#home" data-toggle="tab">
+        W3Cschool Home</a>
+    </li>
+    <li><a href="#ios" data-toggle="tab">iOS</a></li>
+    <li class="dropdown">
+        <a href="#" id="myTabDrop1" class="dropdown-toggle"
+           data-toggle="dropdown">Java <b class="caret"></b>
+        </a>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1">
+            <li><a href="#jmeter" tabindex="-1" data-toggle="tab">
+                jmeter</a>
+            </li>
+            <li><a href="#ejb" tabindex="-1" data-toggle="tab">
+                ejb</a>
+            </li>
+        </ul>
+    </li>
+</ul>
+<div id="myTabContent" class="tab-content">
+    <div class="tab-pane fade in active" id="home">
+        <p>W3Cschoool菜鸟教程是一个提供最新的web技术站点，本站免费提供了建站相关的技术文档，帮助广大web技术爱好者快速入门并建立自己的网站。菜鸟先飞早入行——学的不仅是技术，更是梦想。</p>
+    </div>
+    <div class="tab-pane fade" id="ios">
+        <p>iOS 是一个由苹果公司开发和发布的手机操作系统。最初是于 2007 年首次发布 iPhone、iPod Touch 和 Apple
+            TV。iOS 派生自 OS X，它们共享 Darwin 基础。OS X 操作系统是用在苹果电脑上，iOS 是苹果的移动版本。</p>
+    </div>
+    <div class="tab-pane fade" id="jmeter">
+        <p>jMeter 是一款开源的测试软件。它是 100% 纯 Java 应用程序，用于负载和性能测试。</p>
+    </div>
+    <div class="tab-pane fade" id="ejb">
+        <p>Enterprise Java Beans（EJB）是一个创建高度可扩展性和强大企业级应用程序的开发架构，部署在兼容应用程序服务器（比如 JBOSS、Web Logic 等）的 J2EE 上。
+        </p>
+    </div>
+</div>
+
+
+<br><br><br>
+<hr>
+<p class="active-tab"><strong>激活的标签页</strong>：<span></span></p>
+<p class="previous-tab"><strong>前一个激活的标签页</strong>：<span></span></p>
+<hr>
+
+
+<script>
+//    <!-- 默认选中第二个标签 iOS -->
+    $(function () {
+        $('#myTab li:eq(1) a').tab('show');
+    });
+
+//  事件：显示当前和前一个访问过的标签页
+    $(function(){
+        $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+            // 获取已激活的标签页的名称
+            var activeTab = $(e.target).text();
+            // 获取前一个激活的标签页的名称
+            var previousTab = $(e.relatedTarget).text();
+            $(".active-tab span").html(activeTab);
+            $(".previous-tab span").html(previousTab);
+        });
+    });
+</script>
+
+
+<h4>工具提示（Tooltip）插件 - 锚</h4>
+这是一个 <a href="#" class="tooltip-test" data-toggle="tooltip" title="默认的 Tooltip">默认的 Tooltip</a>.
+这是一个 <a href="#" class="tooltip-test" data-toggle="tooltip" data-placement="left" title="左侧的 Tooltip">左侧的 Tooltip</a>.
+这是一个 <a href="#" data-toggle="tooltip" data-placement="top" title="顶部的 Tooltip">顶部的 Tooltip</a>.
+这是一个 <a href="#" data-toggle="tooltip" data-placement="bottom" title="底部的 Tooltip">底部的 Tooltip</a>.
+这是一个 <a href="#" data-toggle="tooltip" data-placement="right" title="右侧的 Tooltip">右侧的 Tooltip</a>
+<br>
+<h4>工具提示（Tooltip）插件 - 按钮</h4>
+<button type="button" class="btn btn-default" data-toggle="tooltip"  title="默认的 Tooltip"> 默认的 Tooltip</button>
+<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="左侧的 Tooltip">左侧的 Tooltip
+</button>
+<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="顶部的 Tooltip">顶部的 Tooltip
+</button>
+<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="底部的 Tooltip">底部的 Tooltip
+</button>
+<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="右侧的 Tooltip">右侧的 Tooltip</button>
+<!--提示工具（Tooltip）插件不像之前所讨论的下拉菜单及其他插件那样，它不是纯 CSS 插件。如需使用该插件，
+必须使用 jquery 激活它（读取 javascript）。使用下面的脚本来启用页面中的所有的提示工具（tooltip）-->
+<script>
+    $(function () { $("[data-toggle='tooltip']").tooltip(); });
+</script>
+
+
+<br>
+<h1>工具提示（Tooltip）插件方法</h1>
+<div style="padding: 100px 100px 10px;">
+    这是一个
+    <a href="#" class="tooltip-show" data-toggle="tooltip" title="show">Tooltip 方法 show</a>.
+    这是一个
+    <a href="#" class="tooltip-hide" data-toggle="tooltip" data-placement="left" title="hide">Tooltip 方法 hide</a>.
+    这是一个
+    <a href="#" class="tooltip-destroy" data-toggle="tooltip" data-placement="top" title="destroy">Tooltip 方法 destroy</a>.
+    这是一个
+    <a href="#" class="tooltip-toggle" data-toggle="tooltip" data-placement="bottom" title="toggle">Tooltip 方法 toggle</a>.
+    <br><br><br><br><br><br>
+    <p class="tooltip-options" >
+        这是一个
+        <a href="#" data-toggle="tooltip" title="<h2>'am Header2 </h2>">Tooltip 方法 options</a>.
+    </p>
+    <script>
+        $(function () { $('.tooltip-show').tooltip('show');});
+        $(function () { $('.tooltip-hide').tooltip('hide');});
+        $(function () { $('.tooltip-destroy').tooltip('destroy');});
+        $(function () { $('.tooltip-toggle').tooltip('toggle');});
+        $(function () { $(".tooltip-options a").tooltip({html : true });});
+    </script>
+</div>
+
+<h4>工具提示（Tooltip）插件 - 锚</h4>
+这是一个 <a href="#" class="tooltip-show" data-toggle="tooltip"
+        title="默认的 Tooltip">默认的 Tooltip
+</a>.
+<script>
+    $(function () { $('.tooltip-show').tooltip('show');});
+    $(function () { $('.tooltip-show').on('show.bs.tooltip', function () {
+        alert("Alert message on show");
+    })});
+</script>
+
+</body>
+</html>

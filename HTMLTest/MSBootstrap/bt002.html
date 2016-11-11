@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>内联子标题</title>
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<h1>我是标题1 h1. <small>我是副标题1 h1</small></h1>
+<h2>我是标题2 h2. <small>我是副标题2 h2</small></h2>
+<h3>我是标题3 h3. <small>我是副标题3 h3</small></h3>
+<h4>我是标题4 h4. <small>我是副标题4 h4</small></h4>
+<h5>我是标题5 h5. <small>我是副标题5 h5</small></h5>
+<h6>我是标题6 h6. <small>我是副标题6 h6</small></h6>
+
+<h2>引导主体副本</h2>
+<p class="lead">为了给段落添加强调文本，则可以添加 class="lead"，这将得到更大更粗、行高更高的文本</p>
+
+<!--为了得到一个更小字体的文本，请添加 .initialism 到 <abbr>。-->
+<abbr title="World Wide Web">WWW</abbr><br>
+<abbr title="Real Simple Syndication" class="initialism">RSS</abbr>
+
+<!--地址（Address）
+使用 <address> 标签，您可以在网页上显示联系信息。由于 <address> 默认为 display:block;，您需要使用
+标签来为封闭的地址文本添加换行。-->
+<address>
+    <strong>Some Company, Inc.</strong><br>
+    007 street<br>
+    Some City, State XXXXX<br>
+    <abbr title="Phone">P:</abbr> (123) 456-7890
+</address>
+<address>
+    <strong>Full Name</strong><br>
+    <a href="mailto:#">mailto@somedomain.com</a>
+</address>
+
+<!--引用（Blockquote）
+可以在任意的 HTML 文本旁使用默认的 <blockquote>。
+其他选项包括，添加一个 <small> 标签来标识引用的来源，使用 class .pull-right 向右对齐引用-->
+<blockquote>
+    <p>
+        这是一个默认的引用实例。这是一个默认的引用实例。这是一个默认的引用实例。这是一个默认的引用实例。这是一个默认的引用实例。这是一个默认的引用实例。这是一个默认的引用实例。这是一个默认的引用实例。
+    </p>
+</blockquote>
+<blockquote>
+    这是一个带有源标题的引用。
+    <small>Someone famous in <cite title="Source Title">Source Title</cite></small>
+</blockquote>
+<blockquote class="pull-right">
+    这是一个向右对齐的引用。
+    <small>Someone famous in <cite title="Source Title">Source Title</cite></small>
+</blockquote>
+<p>设定引用右对齐</p>
+<blockquote class="blockquote-reverse">
+    <p>For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.</p>
+    <footer>From WWF's website</footer>
+</blockquote>
+
+<h4>有序列表</h4>
+<ol>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+</ol>
+<h4>无序列表</h4>
+<ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+</ul>
+<h4>未定义样式列表</h4>
+<ul class="list-unstyled">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+</ul>
+<h4>内联列表</h4>
+<ul class="list-inline">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+</ul>
+<h4>定义列表</h4>
+<dl>
+    <dt>Description 1</dt>
+    <dd>Item 1</dd>
+    <dt>Description 2</dt>
+    <dd>Item 2</dd>
+</dl>
+<h4>水平的定义列表</h4>
+<dl class="dl-horizontal">
+    <dt>Description 1</dt>
+    <dd>Item 1</dd>
+    <dt>Description 2</dt>
+    <dd>Item 2</dd>
+</dl>
+
+<div class="container">
+    <h2>排版</h2>
+    <p> .list-unstyled 类移除了默认的列表样式，列表项左对齐 (直接子元素):</p>
+    <ul class="list-unstyled">
+        <li>Coffee</li>
+        <li>Tea
+            <ul>
+                <li>Black tea</li>
+                <li>Green tea</li>
+            </ul>
+        </li>
+        <li>Milk</li>
+    </ul>
+
+    <p> .list-inline 类让所有的项显示在同一行:</p>
+    <ul class="list-inline">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+
+    <p>设置 pre 元素可滚动：</p>
+    <pre class="pre-scrollable">
+		内容可滚动
+		Text in a pre element
+		is displayed in a fixed-width
+		font, and it preserves
+		both      spaces and
+		line breaks.
+		Text in a pre element
+		is displayed in a fixed-width
+		font, and it preserves
+		both      spaces and
+		line breaks.
+	</pre>
+</div>
+
+<pre>
+    Bootstrap 代码
+Bootstrap 允许您以两种方式显示代码：
+第一种是 &lt;code&gt; 标签。如果您想要内联显示代码，那么您应该使用 &lt;code&gt; 标签。
+    第二种是 &lt;pre&gt; 标签。如果代码需要被显示为一个独立的块元素或者代码有多行，那么您应该使用 &lt;pre&gt; 标签。
+</pre>
+<p><code>&lt;header&gt;</code> 作为内联元素被包围。</p>
+<p>如果需要把代码显示为一个独立的块元素，请使用 &lt;pre&gt; 标签：</p>
+<pre>
+&lt;article&gt;
+	&lt;h1&gt;Article Heading&lt;/h1&gt;
+&lt;/article&gt;
+</pre>
+
+<div class="container">
+    <h2>代码</h2>
+    <p>使用 var 元素表示变量：</p>
+    <p><var>x</var> = <var>a</var><var>b</var> + <var>y</var></p>
+
+    <p>使用 kbd 元素表示按键输入:</p>
+    <p>使用 <kbd>ctrl + p</kbd> 来打开打印窗口。</p>
+
+    <p>使用 pre 元素输出多行:</p>
+    <pre>在 pre 元素中的文本
+	宽度的显示与文本的宽度一样，
+	保留了  空  格 和
+
+	换行。</pre>
+    <p>如果你添加 .pre-scrollable 类,  pre 元素最大的高度 max-height 为 350px ，并生成一个 Y 轴的滚动条:</p>
+    <pre class="pre-scrollable">在 pre 元素中的文本
+	宽度的显示与文本的宽度一样，
+	保留了  空  格 和
+
+	换行。</pre>
+
+    <p>使用 samp 元素包含电脑输出的内容:</p>
+    <p><samp>This text is output from a computer program....</samp></p>
+    <p>使用 code 元素来表示代码片段:</p>
+    <p>以下是 HTML 元素: <code>span</code>, <code>section</code>, 和 <code>div</code> 。</p>
+</div>
+
+<div class="container">
+    <h2>表格</h2>
+    <p> .table 为任意表格添加基本样式 (只有横向分隔线):</p>
+    <p>.table-condensed	让表格更加紧凑</p>
+    <table class="table table-hover table-condensed">
+        <thead>
+        <tr>
+            <th>#</th>
+            <th>Firstname</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>Anna</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Debbie</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>John</td>
+        </tr>
+        </tbody>
+    </table>
+    <table class="table table-hover">
+        <thead>
+        <tr>
+            <th>#</th>
+            <th>Firstname</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>Anna</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Debbie</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>John</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<form role="form">
+    <div class="form-group">
+        <label for="name">名称</label>
+        <input type="text" class="form-control" id="name"
+               placeholder="请输入名称">
+    </div>
+    <div class="form-group">
+        <label for="inputfile">文件输入</label>
+        <input type="file" id="inputfile">
+        <p class="help-block">这里是块级帮助文本的实例。</p>
+    </div>
+    <div class="checkbox">
+        <label>
+            <input type="checkbox"> 请打勾
+        </label>
+    </div>
+    <button type="submit" class="btn btn-default">提交</button>
+</form>
+
+
+<form class="form-horizontal" role="form">
+    <div class="form-group">
+        <label for="firstname" class="col-sm-2 control-label">名字</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="firstname"
+                   placeholder="请输入名字">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="lastname" class="col-sm-2 control-label">姓</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="lastname"
+                   placeholder="请输入姓">
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox"> 请记住我
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-default">登录</button>
+        </div>
+    </div>
+</form>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css3</title>
+    <style>
+        div
+        {
+            width:100px;
+            height:75px;
+            background-color:red;
+            border:1px solid black;
+        }
+        div#div2
+        {
+            transform:rotate(30deg);
+            -ms-transform:rotate(30deg); /* IE 9 */
+            -webkit-transform:rotate(30deg); /* Safari and Chrome */
+        }
+
+        div#div3
+        {
+            border:2px solid #a1a1a1;
+            padding:10px 40px;
+            background:#dddddd;
+            width:300px;
+            border-radius:25px;                     /* CSS3 创建圆角 */
+            box-shadow: 10px 10px 5px #888888;      /* CSS3 盒阴影 */
+        }
+
+        #rcorners1 {
+            border-radius: 25px;
+            background: #8AC007;
+            padding: 20px;
+            width: 200px;
+            height: 150px;
+        }
+
+        #rcorners2 {
+            border-radius: 25px;
+            border: 2px solid #8AC007;
+            padding: 20px;
+            width: 200px;
+            height: 150px;
+        }
+
+        #rcorners3 {
+            border-radius: 25px;
+            background: url(../music.png);
+            background-position: left top;
+            background-repeat: repeat;
+            padding: 20px;
+            width: 200px;
+            height: 150px;
+        }
+
+        #rcorners4 {
+            border-radius: 15px 50px 30px 5px;
+            background: #8AC007;
+            padding: 20px;
+            width: 200px;
+            height: 150px;
+        }
+
+        #rcorners5 {
+            border-radius: 15px 50px 30px;
+            background: #8AC007;
+            padding: 20px;
+            width: 200px;
+            height: 150px;
+        }
+
+        #rcorners6 {
+            border-radius: 15px 50px;
+            background: #8AC007;
+            padding: 20px;
+            width: 200px;
+            height: 150px;
+        }
+
+        #rcorners7 {
+            border-radius: 50px/15px;
+            background: #8AC007;
+            padding: 20px;
+            width: 200px;
+            height: 150px;
+        }
+        #rcorners8 {
+            border-radius: 15px/50px;
+            background: #8AC007;
+            padding: 20px;
+            width: 200px;
+            height: 150px;
+        }
+
+        #rcorners9 {
+            border-radius: 50%;
+            background: #8AC007;
+            padding: 20px;
+            width: 200px;
+            height: 150px;
+        }
+
+        /* 指定左上角弧度 */
+        div.topleft
+        {
+            border:2px solid;
+            padding:10px;
+            background:#dddddd;
+            border-top-left-radius:2em;
+            -webkit-border-top-left-radius:2em; /* Safari */
+        }
+    </style>
+</head>
+<body>
+<div>你好。这是一个 DIV 元素。</div>
+<div id="div2">你好。这是一个 DIV 元素。</div>
+
+<h1>CSS3 创建圆角 - border-radius属性被用于创建圆角</h1>
+<h1>CSS3盒阴影 - box-shadow属性被用来添加阴影</h1>
+<div id="div3">border-radius 属性允许为元素添加圆角边框！ </div>
+
+<p> border-radius 属性允许向元素添加圆角。</p>
+<p>指定背景颜色元素的圆角:</p>
+<p id="rcorners1">圆角</p>
+<p>指定边框元素的圆角:</p>
+<p id="rcorners2">圆角</p>
+<p>指定背景图片元素的圆角:</p>
+<p id="rcorners3">圆角</p>
+<p>四个值 - border-radius: 15px 50px 30px 5px:</p>
+<p id="rcorners4"></p>
+
+<p>三个值 - border-radius: 15px 50px 30px:</p>
+<p id="rcorners5"></p>
+
+<p>两个值 - border-radius: 15px 50px:</p>
+<p id="rcorners6"></p>
+
+<p>椭圆边框 - border-radius: 50px/15px:</p>
+<p id="rcorners7"></p>
+
+<p> 椭圆边框 - border-radius: 15px/50px:</p>
+<p id="rcorners8"></p>
+
+<p>椭圆边框 - border-radius: 50%:</p>
+<p id="rcorners9"></p>
+
+<p>指定左上角的弧度</p>
+<div class="topleft"> border-top-left-radius 属性允许添加 一个圆角到左上角.</div>
+</body>
+</html>

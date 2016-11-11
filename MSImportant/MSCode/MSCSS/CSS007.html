@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 媒体类型</title>
+
+    <style>
+        @media screen
+        {
+            p.test {font-family:verdana,sans-serif;font-size:14px;}
+        }
+        @media print
+        {
+            p.test {font-family:times,serif;font-size:10px;}
+        }
+        @media screen,print
+        {
+            p.test {font-weight:bold;}
+        }
+
+        [title]
+        {
+            color:blue;
+        }
+
+        [title=mr]
+        {
+            border:5px solid green;
+        }
+
+        input[type="text"]
+        {
+            width:150px;
+            display:block;
+            margin-bottom:10px;
+            background-color:yellow;
+        }
+        input[type="button"]
+        {
+            width:120px;
+            margin-left:35px;
+            display:block;
+        }
+    </style>
+</head>
+<body>
+hahah
+<h2>属性选择器</h2>
+<h1 title="Hello world"> h1 把包含标题（title）的所有元素变为蓝色</h1>
+<p title="Hello world">p 把包含标题（title）的所有元素变为蓝色</p>
+<p title="mr">p 把title=mr的元素加上边框</p>
+
+<br><br>
+<h1>属性选择器样式无需使用class或id的形式</h1>
+<form name="input" action="demo-form.php" method="get">
+    Firstname:<input type="text" name="fname" value="Peter" size="20">
+    Lastname:<input type="text" name="lname" value="Griffin" size="20">
+    <input type="button" value="Example Button">
+</body>
+</html>

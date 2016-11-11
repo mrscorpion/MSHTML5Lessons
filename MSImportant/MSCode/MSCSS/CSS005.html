@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 导航栏</title>
+
+    <style>
+        /* 导航栏1 */
+        ul.nav1
+        {
+            list-style-type:none;
+            margin:0;
+            padding:0;
+            overflow:hidden;
+        }
+        li.nav1
+        {
+            float:left;
+        }
+        a.dropdown1:link,a.dropdown1:visited
+        {
+            display:block;
+            width:120px;
+            font-weight:bold;
+            color:#FFFFFF;
+            background-color:#98bf21;
+            text-align:center;
+            padding:4px;
+            text-decoration:none;
+            text-transform:uppercase;
+        }
+        a.dropdown1:hover,a.dropdown1:active
+        {
+            background-color:#7A991A;
+        }
+
+        /* 导航栏2 */
+        ul.nav2
+        {
+            list-style-type:none;
+            margin:0;
+            padding:0;
+            padding-top:6px;
+            padding-bottom:6px;
+        }
+        li.nav2
+        {
+            display:inline;
+        }
+        a.dropdown2:link,a.dropdown2:visited
+        {
+            font-weight:bold;
+            color:#FFFFFF;
+            background-color:#98bf21;
+            text-align:center;
+            padding:6px;
+            text-decoration:none;
+            text-transform:uppercase;
+        }
+        a.dropdown2:hover,a.dropdown2:active
+        {
+            background-color:#7A991A;
+        }
+    </style>
+</head>
+<body>
+<h1 style="align-content: center">导航栏</h1>
+<h2>导航栏1</h2>
+<ul class="nav1">
+    <li class="nav1"><a class="dropdown1" href="#">Home</a></li>
+    <li class="nav1"><a class="dropdown1" href="#">News</a></li>
+    <li class="nav1"><a class="dropdown1" href="#">Contact</a></li>
+    <li class="nav1"><a class="dropdown1" href="#">About</a></li>
+</ul>
+
+<h2>导航栏2</h2>
+<ul class="nav2">
+    <li class="nav2"><a class="dropdown2" href="#">Home</a></li>
+    <li class="nav2"><a class="dropdown2" href="#">News</a></li>
+    <li class="nav2"><a class="dropdown2" href="#">Contact</a></li>
+    <li class="nav2"><a class="dropdown2" href="#">About</a></li>
+</ul>
+<p><b>注意:</b>如果您只为 a 元素设置内边距（而不设置 ul 元素），那么链接会出现在 ul 元素之外。所以，我们为 ul 元素添加了 top 和 bottom 内边距。 </p>
+
+
+
+</body>
+</html>

@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Bootstrap 实例 - 非导航链接</title>
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">菜鸟教程</a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> 注册</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> 登录</a></li>
+        </ul>
+    </div>
+</nav>
+
+<h1>创建一个带有黑色背景白色文本的倒置的导航栏</h1>
+<p>向 .navbar class 添加 .navbar-inverse class</p>
+<nav class="navbar navbar-inverse" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">菜鸟教程</a>
+        </div>
+        <div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">iOS</a></li>
+                <li><a href="#">SVN</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        Java <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">jmeter</a></li>
+                        <li><a href="#">EJB</a></li>
+                        <li><a href="#">Jasper Report</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">分离的链接</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">另一个分离的链接</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<h1>Bootstrap 面包屑导航（Breadcrumbs）</h1>
+<p>分隔符会通过 CSS（bootstrap.min.css）中下面所示的 class 自动被添加</p>
+<ol class="breadcrumb">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">2013</a></li>
+    <li class="active">十一月</li>
+</ol>
+
+<h1>bootstrap 实例 - 默认的分页</h1>
+<ul class="pagination">
+    <li><a href="#">&laquo;</a></li>
+    <li><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li><a href="#">&raquo;</a></li>
+</ul>
+<p>分页的状态 -  class .disabled、.active 的用法</p>
+<ul class="pagination">
+    <li><a href="#">&laquo;</a></li>
+    <li class="active"><a href="#">1</a></li>
+    <li class="disabled"><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li><a href="#">&raquo;</a></li>
+</ul>
+
+<h1>Bootstrap 实例 - 默认的翻页</h1>
+<ul class="pager">
+    <li><a href="#">Previous</a></li>
+    <li><a href="#">Next</a></li>
+</ul>
+<p>翻页中对齐的链接</p>
+<ul class="pager">
+    <li class="previous"><a href="#">&larr; Older</a></li>
+    <li class="next"><a href="#">Newer &rarr;</a></li>
+</ul>
+<p>翻页的状态 -  class .disabled 的用法</p>
+<ul class="pager">
+    <li class="previous disabled"><a href="#">&larr; Older</a></li>
+    <li class="next"><a href="#">Newer &rarr;</a></li>
+</ul>
+<h1>标签页与胶囊式标签页</h1>
+<div class="container">
+    <h2>分页</h2>
+    <p>.pager 类提供了一个简单的分页样式:</p>
+    <ul class="pager">
+        <li><a href="#">上一页</a></li>
+        <li><a href="#">下一页</a></li>
+    </ul>
+</div>
+
+<h1>徽章（Badges)</h1>
+<a href="#">Mailbox <span class="badge">50</span></a>
+<div class="container">
+    <h2>徽章</h2>
+    <p>.badge 类指定未读消息的数量:</p>
+    <p><a href="#">收件箱 <span class="badge">21</span></a></p>
+</div>
+
+<h1>超大屏幕（Jumbotron）</h1>
+<div class="container">
+    <div class="jumbotron">
+        <h1>欢迎登陆页面！</h1>
+        <p>这是一个超大屏幕（Jumbotron）的实例。</p>
+        <p><a class="btn btn-primary btn-lg" role="button">
+            学习更多</a>
+        </p>
+    </div>
+</div>
+<h3>为了获得占用全部宽度且不带圆角的超大屏幕，请在所有的 .container class 外使用 .jumbotron class</h3>
+<div class="jumbotron">
+    <div class="container">
+        <h1>欢迎登陆页面！</h1>
+        <p>这是一个超大屏幕（Jumbotron）的实例。</p>
+        <p><a class="btn btn-primary btn-lg" role="button">
+            学习更多</a>
+        </p>
+    </div>
+</div>
+
+<h1>页面标题</h1>
+<div class="page-header">
+    <h1>页面标题实例
+        <small>子标题</small>
+    </h1>
+</div>
+<p>这是一个示例文本。这是一个示例文本。这是一个示例文本。这是一个示例文本。这是一个示例文本。</p>
+
+<h1>Bootstrap 缩略图</h1>
+<div class="row">
+    <div class="col-sm-6 col-md-3">
+        <a href="#" class="thumbnail">
+            <img src="../MSHelp/img/fc.png"
+                 alt="通用的占位符缩略图">
+        </a>
+    </div>
+    <div class="col-sm-6 col-md-3">
+        <a href="#" class="thumbnail">
+            <img src="../MSHelp/img/fc.png"
+                 alt="通用的占位符缩略图">
+        </a>
+    </div>
+    <div class="col-sm-6 col-md-3">
+        <a href="#" class="thumbnail">
+            <img src="../MSHelp/img/fc.png"
+                 alt="通用的占位符缩略图">
+        </a>
+    </div>
+    <div class="col-sm-6 col-md-3">
+        <a href="#" class="thumbnail">
+            <img src="../MSHelp/img/fc.png"
+                 alt="通用的占位符缩略图">
+        </a>
+    </div>
+</div>
+<h3>添加自定义的内容</h3>
+<div class="row">
+    <div class="col-sm-6 col-md-3">
+        <div class="thumbnail">
+            <img src="../MSHelp/img/fc.png"
+                 alt="通用的占位符缩略图">
+            <div class="caption">
+                <h3>缩略图标签</h3>
+                <p>一些示例文本。一些示例文本。</p>
+                <p>
+                    <a href="#" class="btn btn-primary" role="button">
+                        按钮
+                    </a>
+                    <a href="#" class="btn btn-default" role="button">
+                        按钮
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-md-3">
+        <div class="thumbnail">
+            <img src="../MSHelp/img/fc.png"
+                 alt="通用的占位符缩略图">
+            <div class="caption">
+                <h3>缩略图标签</h3>
+                <p>一些示例文本。一些示例文本。</p>
+                <p>
+                    <a href="#" class="btn btn-primary" role="button">
+                        按钮
+                    </a>
+                    <a href="#" class="btn btn-default" role="button">
+                        按钮
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-md-3">
+        <div class="thumbnail">
+            <img src="../MSHelp/img/fc.png"
+                 alt="通用的占位符缩略图">
+            <div class="caption">
+                <h3>缩略图标签</h3>
+                <p>一些示例文本。一些示例文本。</p>
+                <p>
+                    <a href="#" class="btn btn-primary" role="button">
+                        按钮
+                    </a>
+                    <a href="#" class="btn btn-default" role="button">
+                        按钮
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-md-3">
+        <div class="thumbnail">
+            <img src="../MSHelp/img/fc.png"
+                 alt="通用的占位符缩略图">
+            <div class="caption">
+                <h3>缩略图标签</h3>
+                <p>一些示例文本。一些示例文本。</p>
+                <p>
+                    <a href="#" class="btn btn-primary" role="button">
+                        按钮
+                    </a>
+                    <a href="#" class="btn btn-default" role="button">
+                        按钮
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h1>Bootstrap 警告（Alerts）</h1>
+<div class="alert alert-success">成功！很好地完成了提交。</div>
+<div class="alert alert-info">信息！请注意这个信息。</div>
+<div class="alert alert-warning">警告！请不要提交。</div>
+<div class="alert alert-danger">错误！请进行一些更改。</div>
+<h3>可取消的警告（Dismissal Alerts）</h3>
+<div class="alert alert-success alert-dismissable">
+    <button type="button" class="close" data-dismiss="alert"
+            aria-hidden="true">
+        &times;
+    </button>
+    成功！很好地完成了提交。
+</div>
+<div class="alert alert-info alert-dismissable">
+    <button type="button" class="close" data-dismiss="alert"
+            aria-hidden="true">
+        &times;
+    </button>
+    信息！请注意这个信息。
+</div>
+<div class="alert alert-warning alert-dismissable">
+    <button type="button" class="close" data-dismiss="alert"
+            aria-hidden="true">
+        &times;
+    </button>
+    警告！请不要提交。
+</div>
+<div class="alert alert-danger alert-dismissable">
+    <button type="button" class="close" data-dismiss="alert"
+            aria-hidden="true">
+        &times;
+    </button>
+    错误！请进行一些更改。
+</div>
+
+<h1>进度条</h1>
+<div class="progress">
+    <div class="progress-bar" role="progressbar" aria-valuenow="60"
+         aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
+        <span class="sr-only">40% 完成</span>
+    </div>
+</div>
+<div class="progress">
+    <div class="progress-bar progress-bar-success" role="progressbar"
+         aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+         style="width: 90%;">
+        <span class="sr-only">90% 完成（成功）</span>
+    </div>
+</div>
+<div class="progress">
+    <div class="progress-bar progress-bar-info" role="progressbar"
+         aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+         style="width: 30%;">
+        <span class="sr-only">30% 完成（信息）</span>
+    </div>
+</div>
+<div class="progress">
+    <div class="progress-bar progress-bar-warning" role="progressbar"
+         aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+         style="width: 20%;">
+        <span class="sr-only">20% 完成（警告）</span>
+    </div>
+</div>
+<div class="progress">
+    <div class="progress-bar progress-bar-danger" role="progressbar"
+         aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+         style="width: 10%;">
+        <span class="sr-only">10% 完成（危险）</span>
+    </div>
+</div>
+<h3>条纹的进度条</h3>
+<div class="progress progress-striped">
+    <div class="progress-bar progress-bar-success" role="progressbar"
+         aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+         style="width: 90%;">
+        <span class="sr-only">90% 完成（成功）</span>
+    </div>
+</div>
+<div class="progress progress-striped">
+    <div class="progress-bar progress-bar-info" role="progressbar"
+         aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+         style="width: 30%;">
+        <span class="sr-only">30% 完成（信息）</span>
+    </div>
+</div>
+<div class="progress progress-striped">
+    <div class="progress-bar progress-bar-warning" role="progressbar"
+         aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+         style="width: 20%;">
+        <span class="sr-only">20% 完成（警告）</span>
+    </div>
+</div>
+<div class="progress progress-striped">
+    <div class="progress-bar progress-bar-danger" role="progressbar"
+         aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+         style="width: 10%;">
+        <span class="sr-only">10% 完成（危险）</span>
+    </div>
+</div>
+<h2>动画的进度条</h2>
+<div class="progress progress-striped active">
+    <div class="progress-bar progress-bar-success" role="progressbar"
+         aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+         style="width: 40%;">
+        <span class="sr-only">40% 完成</span>
+    </div>
+</div>
+<h2>堆叠的进度条</h2>
+<div class="progress progress-striped active">
+    <div class="progress-bar progress-bar-success" role="progressbar"
+         aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+         style="width: 40%;">
+        <span class="sr-only">40% 完成</span>
+    </div>
+    <div class="progress-bar progress-bar-info" role="progressbar"
+         aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+         style="width: 30%;">
+        <span class="sr-only">30% 完成（信息）</span>
+    </div>
+    <div class="progress-bar progress-bar-warning" role="progressbar"
+         aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+         style="width: 20%;">
+        <span class="sr-only">20% 完成（警告）</span>
+    </div>
+</div>
+
+<h1>Bootstrap 多媒体对象（Media Object）</h1>
+<div class="media">
+    <a class="pull-left" href="#">
+        <img class="media-object" src="../MSHelp/img/fc.png" alt="媒体对象">
+    </a>
+    <div class="media-body">
+        <h4 class="media-heading">媒体标题</h4>
+        这是一些示例文本。这是一些示例文本。
+        这是一些示例文本。这是一些示例文本。
+        这是一些示例文本。这是一些示例文本。
+        这是一些示例文本。这是一些示例文本。
+        这是一些示例文本。这是一些示例文本。
+    </div>
+</div>
+<div class="media">
+    <a class="pull-left" href="#">
+        <img class="media-object" src="../MSHelp/img/fc.png" alt="媒体对象">
+    </a>
+    <div class="media-body">
+        <h4 class="media-heading">媒体标题</h4>
+        这是一些示例文本。这是一些示例文本。
+        这是一些示例文本。这是一些示例文本。
+        这是一些示例文本。这是一些示例文本。
+        这是一些示例文本。这是一些示例文本。
+        这是一些示例文本。这是一些示例文本。
+        <div class="media">
+            <a class="pull-left" href="#">
+                <img class="media-object" src="../MSHelp/img/fc.png" alt="媒体对象">
+            </a>
+            <div class="media-body">
+                <h4 class="media-heading">媒体标题</h4>
+                这是一些示例文本。这是一些示例文本。
+                这是一些示例文本。这是一些示例文本。
+                这是一些示例文本。这是一些示例文本。
+                这是一些示例文本。这是一些示例文本。
+                这是一些示例文本。这是一些示例文本。
+            </div>
+        </div>
+    </div>
+</div>
+
+<h1>媒体对象列表 .media-list </h1>
+<ul class="media-list">
+    <li class="media">
+        <a class="pull-left" href="#">
+            <img class="media-object" src="../MSHelp/img/fc.png"
+                 alt="通用的占位符图像">
+        </a>
+        <div class="media-body">
+            <h4 class="media-heading">媒体标题</h4>
+            <p>这是一些示例文本。这是一些示例文本。
+                这是一些示例文本。这是一些示例文本。
+                这是一些示例文本。这是一些示例文本。
+                这是一些示例文本。这是一些示例文本。
+                这是一些示例文本。这是一些示例文本。</p>
+            <!-- 嵌套的媒体对象 -->
+            <div class="media">
+                <a class="pull-left" href="#">
+                    <img class="media-object" src="../MSHelp/img/fc.png"
+                         alt="通用的占位符图像">
+                </a>
+                <div class="media-body">
+                    <h4 class="media-heading">嵌套的媒体标题</h4>
+                    这是一些示例文本。这是一些示例文本。
+                    这是一些示例文本。这是一些示例文本。
+                    这是一些示例文本。这是一些示例文本。
+                    这是一些示例文本。这是一些示例文本。
+                    这是一些示例文本。这是一些示例文本。
+                    <!-- 嵌套的媒体对象 -->
+                    <div class="media">
+                        <a class="pull-left" href="#">
+                            <img class="media-object" src="../MSHelp/img/fc.png"
+                                 alt="通用的占位符图像">
+                        </a>
+                        <div class="media-body">
+                            <h4 class="media-heading">嵌套的媒体标题</h4>
+                            这是一些示例文本。这是一些示例文本。
+                            这是一些示例文本。这是一些示例文本。
+                            这是一些示例文本。这是一些示例文本。
+                            这是一些示例文本。这是一些示例文本。
+                            这是一些示例文本。这是一些示例文本。
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 嵌套的媒体对象 -->
+            <div class="media">
+                <a class="pull-left" href="#">
+                    <img class="media-object" src="../MSHelp/img/fc.png"
+                         alt="通用的占位符图像">
+                </a>
+                <div class="media-body">
+                    <h4 class="media-heading">嵌套的媒体标题</h4>
+                    这是一些示例文本。这是一些示例文本。
+                    这是一些示例文本。这是一些示例文本。
+                    这是一些示例文本。这是一些示例文本。
+                    这是一些示例文本。这是一些示例文本。
+                    这是一些示例文本。这是一些示例文本。
+                </div>
+            </div>
+        </div>
+    </li>
+    <li class="media">
+        <a class="pull-right" href="#">
+            <img class="media-object" src="../MSHelp/img/fc.png"
+                 alt="通用的占位符图像">
+        </a>
+        <div class="media-body">
+            <h4 class="media-heading">媒体标题</h4>
+            这是一些示例文本。这是一些示例文本。
+            这是一些示例文本。这是一些示例文本。
+            这是一些示例文本。这是一些示例文本。
+            这是一些示例文本。这是一些示例文本。
+            这是一些示例文本。这是一些示例文本。
+        </div>
+    </li>
+</ul>
+
+<h1>基本的列表组</h1>
+<ul class="list-group">
+    <li class="list-group-item">免费域名注册</li>
+    <li class="list-group-item">免费 Window 空间托管</li>
+    <li class="list-group-item">图像的数量</li>
+    <li class="list-group-item">24*7 支持</li>
+    <li class="list-group-item">每年更新成本</li>
+</ul>
+<h3>向列表组添加徽章</h3>
+<ul class="list-group">
+    <li class="list-group-item">免费域名注册</li>
+    <li class="list-group-item">免费 Window 空间托管</li>
+    <li class="list-group-item">图像的数量</li>
+    <li class="list-group-item">
+        <span class="badge">新</span>
+        24*7 支持
+    </li>
+    <li class="list-group-item">每年更新成本</li>
+    <li class="list-group-item">
+        <span class="badge">新</span>
+        折扣优惠
+    </li>
+</ul>
+<h3>向列表组添加链接</h3>
+<a href="#" class="list-group-item active">
+    免费域名注册
+</a>
+<a href="#" class="list-group-item">24*7 支持</a>
+<a href="#" class="list-group-item">免费 Window 空间托管</a>
+<a href="#" class="list-group-item">图像的数量</a>
+<a href="#" class="list-group-item">每年更新成本</a>
+
+<h3>向列表组添加自定义内容</h3>
+<div class="list-group">
+    <a href="#" class="list-group-item active">
+        <h4 class="list-group-item-heading">
+            入门网站包
+        </h4>
+    </a>
+    <a href="#" class="list-group-item">
+        <h4 class="list-group-item-heading">
+            免费域名注册
+        </h4>
+        <p class="list-group-item-text">
+            您将通过网页进行免费域名注册。
+        </p>
+    </a>
+    <a href="#" class="list-group-item">
+        <h4 class="list-group-item-heading">
+            24*7 支持
+        </h4>
+        <p class="list-group-item-text">
+            我们提供 24*7 支持。
+        </p>
+    </a>
+</div>
+<div class="list-group">
+    <a href="#" class="list-group-item active">
+        <h4 class="list-group-item-heading">
+            商务网站包
+        </h4>
+    </a>
+    <a href="#" class="list-group-item">
+        <h4 class="list-group-item-heading">
+            免费域名注册
+        </h4>
+        <p class="list-group-item-text">
+            您将通过网页进行免费域名注册。
+        </p>
+    </a>
+    <a href="#" class="list-group-item">
+        <h4 class="list-group-item-heading">24*7 支持</h4>
+        <p class="list-group-item-text">我们提供 24*7 支持。</p>
+    </a>
+</div>
+
+<h1>Bootstrap 面板（Panels）</h1>
+<div class="panel panel-default">
+    <div class="panel-body">
+        这是一个基本的面板
+    </div>
+</div>
+<h3>带表格的面板</h3>
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">面板标题</h3>
+    </div>
+    <div class="panel-body">
+        这是一个基本的面板
+    </div>
+    <table class="table">
+        <th>产品</th><th>价格 </th>
+        <tr><td>产品 A</td><td>200</td></tr>
+        <tr><td>产品 B</td><td>400</td></tr>
+    </table>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading">面板标题</div>
+    <table class="table">
+        <th>产品</th><th>价格 </th>
+        <tr><td>产品 A</td><td>200</td></tr>
+        <tr><td>产品 B</td><td>400</td></tr>
+    </table>
+</div>
+<h3>带列表组的面板</h3>
+<div class="panel panel-default">
+    <div class="panel-heading">面板标题</div>
+    <div class="panel-body">
+        <p>这是一个基本的面板内容。这是一个基本的面板内容。
+            这是一个基本的面板内容。这是一个基本的面板内容。
+            这是一个基本的面板内容。这是一个基本的面板内容。
+            这是一个基本的面板内容。这是一个基本的面板内容。
+        </p>
+    </div>
+    <ul class="list-group">
+        <li class="list-group-item">免费域名注册</li>
+        <li class="list-group-item">免费 Window 空间托管</li>
+        <li class="list-group-item">图像的数量</li>
+        <li class="list-group-item">24*7 支持</li>
+        <li class="list-group-item">每年更新成本</li>
+    </ul>
+</div>
+
+<h2>Well 是一种会引起内容凹陷显示或插图效果的容器 &lt;div&gt;。为了创建 Well，只需要简单地把内容放在带有 class .well 的 &lt;div&gt; 中即可</h2>
+<div class="well">您好，我在 Well 中！</div>
+
+<h1>让导航栏固定在页面的底部</h1>
+<nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">菜鸟教程</a>
+        </div>
+        <div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">iOS</a></li>
+                <li><a href="#">SVN</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        Java <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">jmeter</a></li>
+                        <li><a href="#">EJB</a></li>
+                        <li><a href="#">Jasper Report</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">分离的链接</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">另一个分离的链接</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+</body>
+</html>
