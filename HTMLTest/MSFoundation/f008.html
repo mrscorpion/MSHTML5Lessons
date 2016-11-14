@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Foundation 实例</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/foundation/5.5.3/css/foundation.min.css">
+    <!--Foundation 会自动渲染表单样式。可以移除样式文件 foundation.min.css 来查看原生的 HTML 表单。-->
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/foundation/5.5.3/js/foundation.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/foundation/5.5.3/js/vendor/modernizr.js"></script>
+</head>
+<body style="padding:20px;">
+
+<h2>表单</h2>
+<pre>
+    所有 <code>&lt;textarea&gt;</code>, <code>&lt;select&gt;</code>; 及 <code>&lt;input&gt;</code>;
+    元素宽度都为 100%，且带有外边距、内边距、阴影喝鼠标移动效果。
+    【用 &lt;pre&gt; 和 &lt;code&gt; 标签时，开始和结束标签使用了 unicode 变体： &lt; 和 &gt;】
+</pre>
+<form>
+    Input:
+    <input type="text" placeholder="Name">
+
+    Textarea:
+    <textarea rows="4" placeholder="Address"></textarea>
+
+    Select:
+    <select>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+    </select>
+</form>
+
+<p> Foundation 会自动渲染表单样式。你可以移除样式文件 foundation.min.css 来查看原生的 HTML 表单。</p>
+
+
+<h2>在表单中使用 &#60;label&#62; 元素来设置标签，标签可以添加 for 属性和 id 属性。用户在点击标签或输入域时获取输入框焦点</h2>
+<form>
+    <label for="name">Input
+        <input type="text" placeholder="Name" id="name">
+    </label>
+
+    <label for="address">Textarea
+        <textarea rows="4" placeholder="Address" id="address"></textarea>
+    </label>
+
+    <label for="num">Select
+        <select id="num">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+        </select>
+    </label>
+</form>
+
+<h2>如果需要设置标签右对齐，可以使用 .right 类</h2>
+<code>&#60;label class="right"&#62;</code>
+<form>
+    <label for="name2" class="right">Input
+        <input type="text" placeholder="Name" id="name2">
+    </label>
+
+    <label for="address2" class="right">Textarea
+        <textarea rows="4" placeholder="Address" id="address2"></textarea>
+    </label>
+
+    <label for="num2" class="right">Select
+        <select id="num2">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+        </select>
+    </label>
+</form>
+
+<h2>fieldset</h2>
+<form>
+    <fieldset>
+        <legend>fieldset Legend</legend>
+        <label>Name
+            <input type="text" placeholder="First Name..">
+        </label>
+        <label>Email
+            <input type="text" placeholder="Enter email..">
+        </label>
+    </fieldset>
+</form>
+
+<h2>错误状态</h2>
+<p>需要使用 JavaScript 来更新用户输入的错误状态。</p>
+<form>
+    <label class="error">错误
+        <input type="text" placeholder="Name..">
+    </label>
+    <small class="error">输入错误</small>
+
+    <textarea rows="4" placeholder="Address"></textarea>
+    <small class="error">输入错误</small>
+</form>
+
+<hr>
+<h1>Foundation 输入框</h1>
+<form>
+    <div class="row">
+        <h2>使用网格设置输入框大小</h2>
+        <div class="large-10 medium-7 columns">
+            <label>large-10 medium-7 (100% on small)
+                <input type="text" placeholder="Name">
+            </label>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="small-5 columns">
+            <label>small-5
+                <input type="text" placeholder="Name">
+            </label>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="medium-3 columns">
+            <label>medium-3 (100% on small)
+                <input type="text" placeholder="Name">
+            </label>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="medium-4 columns">
+            <label>medium-4 (100% on small, stacked)
+                <input type="text" placeholder="Name">
+            </label>
+        </div>
+
+        <div class="medium-4 columns">
+            <label>medium-4 (100% on small, stacked)
+                <input type="text" placeholder="Name">
+            </label>
+        </div>
+
+        <div class="medium-4 columns">
+            <label>medium-4 (100% on small, stacked)
+                <input type="text" placeholder="Name">
+            </label>
+        </div>
+    </div>
+</form>
+
+<form>
+    <div class="row">
+        <h2>内联标签 Label</h2>
+        <p><strong>提示:</strong> 如果你需要标签显示在左边，可以移除 .right 类。</p>
+        <div class="small-8">
+            <div class="row">
+                <div class="small-3 columns">
+                    <label for="name4" class="inline right">Name</label>
+                </div>
+                <div class="small-9 columns">
+                    <input type="text" id="name4" placeholder="First Name..">
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+<blockquote>
+    可以在 &#60;div class="row collapse"&#62; 中添加前置和后置标签，
+    元素为： &#60;element class="postfix"&#62; 或 &#60;element class="prefix"&#62;。
+        可以使用网格系统来设置前置和后置标签的大小
+</blockquote>
+<form>
+    <div class="row">
+        <h2>前置后置标签</h2>
+        <div class="large-6 columns">
+            <div class="row collapse prefix-radius">
+                <div class="small-3 columns">
+                    <span class="prefix">前置</span>
+                </div>
+                <div class="small-9 columns">
+                    <input type="text" placeholder="Value">
+                </div>
+            </div>
+        </div>
+        <div class="large-6 columns">
+            <div class="row collapse postfix-radius">
+                <div class="small-9 columns">
+                    <input type="text" placeholder="Value">
+                </div>
+                <div class="small-3 columns">
+                    <span class="postfix">后置</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+<h2>前置和后置标签按钮</h2>
+<p>可以使用 &lt;a&gt; 元素添加 .button 类来设置前置和后置按钮</p>
+<form>
+    <div class="row">
+        <h2>前置/后置按钮</h2>
+        <div class="large-12 columns">
+            <div class="row collapse">
+                <div class="small-10 columns">
+                    <input type="text" placeholder="搜索">
+                </div>
+                <div class="small-2 columns">
+                    <a href="#" class="button postfix">提交</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+<h2>前置和后置标签圆角按钮</h2>
+<form>
+    <div class="row">
+        <h2>前置和后置标签</h2>
+        <p>圆角前置和后置标签:</p>
+        <div class="large-6 columns">
+            <div class="row collapse prefix-radius">
+                <div class="small-3 columns">
+                    <span class="prefix">Prefix</span>
+                </div>
+                <div class="small-9 columns">
+                    <input type="text" placeholder="Value">
+                </div>
+            </div>
+        </div>
+        <div class="large-6 columns">
+            <div class="row collapse postfix-radius">
+                <div class="small-9 columns">
+                    <input type="text" placeholder="Value">
+                </div>
+                <div class="small-3 columns">
+                    <span class="postfix">Postfix</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <p>圆形前置和后置标签按钮:</p>
+        <div class="large-6 columns">
+            <div class="row collapse prefix-round">
+                <div class="small-3 columns">
+                    <a href="#" class="button prefix">Go</a>
+                </div>
+                <div class="small-9 columns">
+                    <input type="text" placeholder="Value">
+                </div>
+            </div>
+        </div>
+        <div class="large-6 columns">
+            <div class="row collapse postfix-round">
+                <div class="small-9 columns">
+                    <input type="text" placeholder="Value">
+                </div>
+                <div class="small-3 columns">
+                    <a href="#" class="button postfix">Go</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+<div style="padding:20px;">
+    <h2>开关</h2>
+    <p>可以在 div 中添加 class="switch" 类，并添加 input checkbox 和 label 元素来创建开关:</p>
+    <form>
+        <div class="switch">
+            <input id="mySwitch" type="checkbox">
+            <label for="mySwitch"></label>
+        </div>
+    </form>
+</div>
+<div style="padding:20px;">
+    <h2>开关大小</h2>
+    <p>使用 <code>.large</code>, <code>.small</code> 或 <code>.tiny</code> 类来设置开关的大小:</p>
+    <span>Large</span>
+    <div class="switch large">
+        <input id="mySwitch1" type="checkbox">
+        <label for="mySwitch1"></label>
+    </div>
+
+    <span>Default</span>
+    <div class="switch">
+        <input id="mySwitch2" type="checkbox">
+        <label for="mySwitch2"></label>
+    </div>
+
+    <span>Small</span>
+    <div class="switch small">
+        <input id="mySwitch3" type="checkbox">
+        <label for="mySwitch3"></label>
+    </div>
+
+    <span>Tiny</span>
+    <div class="switch tiny">
+        <input id="mySwitch4" type="checkbox">
+        <label for="mySwitch4"></label>
+    </div>
+</div>
+<div style="padding:20px;">
+    <h2>圆角开关</h2>
+    <p>使用 <code>.radius</code> 和 <code>.round</code> 类来设置圆角开关:</p>
+    <span>默认</span>
+    <div class="switch">
+        <input id="mySwitch5" type="checkbox">
+        <label for="mySwitch5"></label>
+    </div>
+
+    <span>圆角</span>
+    <div class="switch radius">
+        <input id="mySwitch6" type="checkbox">
+        <label for="mySwitch6"></label>
+    </div>
+
+    <span>圆形</span>
+    <div class="switch round">
+        <input id="mySwitch7" type="checkbox">
+        <label for="mySwitch7"></label>
+    </div>
+</div>
+
+<div style="padding:20px;">
+    <h2>开关组</h2>
+    <p>可以通过设置单选按钮(radio)来设置单个选项。<strong>注意:</strong> 注意各个选项的 <code>name</code> 属性必须一致 (实例中为 "myGroup" )。</p>
+    <form>
+        <div class="switch">
+            <input id="mySwitch8" type="radio" name="myGroup">
+            <label for="mySwitch8"></label>
+        </div>
+
+        <div class="switch">
+            <input id="mySwitch9" type="radio" checked name="myGroup">
+            <label for="mySwitch9"></label>
+        </div>
+
+        <div class="switch">
+            <input id="mySwitch10" type="radio" name="myGroup">
+            <label for="mySwitch10"></label>
+        </div>
+    </form>
+</div>
+
+
+<br><br>
+<hr>
+<p>滑块需要使用 JavaScript。所以需要初始化 oundation JS</p>
+<div style="padding:20px;">
+    <h2>区间滑块</h2>
+    <p> .range-slider-handle 类创建一个滑块实体（蓝色矩形），.range-slider-active-segment 在滑块后添加灰色横条：</p>
+    <div class="range-slider" data-slider>
+        <span class="range-slider-handle"></span>
+        <span class="range-slider-active-segment"></span>
+    </div>
+</div>
+
+<div style="padding:20px;">
+    <h2>圆角 & 禁用滑块</h2>
+    <p>使用 <code>.radius</code> 和 <code>.round</code> 类来添加圆角滑块。使用 <code>.disabled</code> 类来禁用滑块：</p>
+
+    <span>默认:</span>
+    <div class="range-slider" data-slider>
+        <span class="range-slider-handle"></span>
+        <span class="range-slider-active-segment"></span>
+    </div>
+
+    <span>圆角:</span>
+    <div class="range-slider radius" data-slider>
+        <span class="range-slider-handle"></span>
+        <span class="range-slider-active-segment"></span>
+    </div>
+
+    <span>圆形:</span>
+    <div class="range-slider round" data-slider>
+        <span class="range-slider-handle"></span>
+        <span class="range-slider-active-segment"></span>
+    </div>
+
+    <span>禁用:</span>
+    <div class="range-slider disabled" data-slider>
+        <span class="range-slider-handle"></span>
+        <span class="range-slider-active-segment"></span>
+    </div>
+</div>
+<!-- 初始化 Foundation JS -->
+<script>
+    $(document).ready(function() {
+        $(document).foundation();
+    })
+</script>
+
+<div style="padding:20px;">
+    <h2>垂直滑块</h2>
+    <p>使用 <code>.vertical-range</code> 类和 <code>data-options="vertical: true;"</code> 来创建垂直滑块:</p>
+    <div class="range-slider vertical-range" data-slider data-options="vertical: true;">
+        <span class="range-slider-handle"></span>
+        <span class="range-slider-active-segment"></span>
+    </div>
+</div>
+
+<div style="padding:20px;">
+    <h2>默认滑块值</h2>
+    <p>默认情况下，滑块放在横条的中间 (数值为 "50")。可以通过添加 <code>data-options="initial: <em>num</em>"</code> 属性来修改默认值:</p>
+    <div class="range-slider" data-slider data-options="initial: 80;">
+        <span class="range-slider-handle"></span>
+        <span class="range-slider-active-segment"></span>
+    </div>
+</div>
+
+<div style="padding:20px;">
+    <h2>显示滑块值</h2>
+    <p>如果我们需要在滑块拖动时实时显示值，可以通过在 <code> &lt;div&gt;</code> 中添加 <code>data-options="display_selector:#<em>id</em>"</code> 属性且元素 id 值与滑块的 id 匹配，如下实例：</p>
+    <span id="mySlider2"></span>
+    <div class="range-slider" data-slider data-options="display_selector: #mySlider2;">
+        <span class="range-slider-handle"></span>
+        <span class="range-slider-active-segment"></span>
+    </div>
+</div>
+
+<div style="padding:20px;">
+    <h2>组合数据选项</h2>
+    <p>以下实例使用了 <code>display_selector</code> 和 <code>initial</code> 数据选项:</p>
+    <span id="mySlider3"></span>
+    <div class="range-slider" data-slider data-options="display_selector: #mySlider3; initial:20;">
+        <span class="range-slider-handle"></span>
+        <span class="range-slider-active-segment"></span>
+    </div>
+</div>
+
+<div style="padding:20px;">
+    <h2>步长</h2>
+    <p>默认情况下，滑块滑动的增加减少的数量为 "1"。可以通过添加 <code>data-options="step: <em>num</em>;"</code> 属性来修改长值。实例中设置为 25:</p>
+
+    <span id="mySlider4"></span>
+    <div class="range-slider" data-slider data-options="display_selector: #mySlider4; step: 25;">
+        <span class="range-slider-handle"></span>
+        <span class="range-slider-active-segment"></span>
+    </div>
+</div>
+
+<div style="padding:20px;">
+    <h2>自定义区间</h2>
+    <p>默认情况下，区间值在 "0" 到 "100"。可以通过添加 data-options <code>start</code> 和 <code>end</code> 来设置区间值。以下实例设置区间值为 "1" 到 "20":</p>
+
+    <span id="mySlider5"></span>
+    <div class="range-slider" data-slider data-options="display_selector: #mySlider5; start: 1; end: 20;">
+        <span class="range-slider-handle"></span>
+        <span class="range-slider-active-segment"></span>
+    </div>
+</div>
+
+<div class="row">
+    <h2>使用网格</h2>
+    <p>以下使用为在网格中使用滑块：</p>
+    <div class="small-10 columns">
+        <div class="range-slider" data-slider data-options="display_selector: #mySlider6;">
+            <span class="range-slider-handle"></span>
+            <span class="range-slider-active-segment"></span>
+        </div>
+    </div>
+    <div class="small-2 columns">
+        <span id="mySlider6" style="display:block;margin-top:14px;"></span>
+    </div>
+</div>
+
+<div class="row">
+    <h2>使用 Input</h2>
+    <p>以下实例使用 <code>&lt;input&gt;</code> 取代 <code>&lt;span&gt;</code> 来显示滑块的值:</p>
+    <div class="small-10 columns">
+        <div class="range-slider" data-slider data-options="display_selector: #mySlider; initial: 72;">
+            <span class="range-slider-handle"></span>
+            <span class="range-slider-active-segment"></span>
+        </div>
+    </div>
+    <div class="small-2 columns">
+        <input type="number" id="mySlider" style="margin-top:7px;" value="72">
+    </div>
+</div>
+</body>
+</html>
+

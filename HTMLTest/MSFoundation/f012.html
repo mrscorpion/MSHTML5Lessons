@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Foundation 块状网格</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/foundation/5.5.3/css/foundation.min.css">
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/foundation/5.5.3/js/foundation.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/foundation/5.5.3/js/vendor/modernizr.js"></script>
+</head>
+<body style="padding:20px;">
+
+<h2>Foundation 块状网格 - 块状网格用于均分页面内容：不管什么屏幕下都需要均分宽度。</h2>
+<p>可以使用 &lt;ul&gt; 元素加上 .small|medium|large-block-grid-num 类来创建块状网格。num 用于指定均分是数量</p>
+<p>图片均分屏幕宽度:</p>
+<ul class="small-block-grid-3">
+    <li><img src="newyork.jpg" alt="New York" width="400" height="300"></li>
+    <li><img src="paris.jpg" alt="Paris" width="400" height="300"></li>
+    <li><img src="sanfran.jpg" alt="San Francisco" width="400" height="300"></li>
+</ul>
+
+<p>均分段落:</p>
+<ul class="small-block-grid-3">
+    <li><p>Just a Simple Example Text...</p></li>
+    <li><p>Just a Simple Example Text...</p></li>
+    <li><p>Just a Simple Example Text...</p></li>
+</ul>
+
+<h1>不同尺寸屏幕显示不同数量</h1>
+<p>通过添加多个网格块类可以设置不同尺寸屏幕显示不同的块数量</p>
+<h2>Foundation 块状网格</h2>
+<p>通过添加多个块类，在不同屏幕指定不同是均分数量:</p>
+<ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-4">
+    <li><img src="newyork.jpg" alt="New York" width="400" height="300"></li>
+    <li><img src="paris.jpg" alt="Paris" width="400" height="300"></li>
+    <li><img src="sanfran.jpg" alt="San Francisco" width="400" height="300"></li>
+    <li><img src="newyork.jpg" alt="New York" width="400" height="300"></li>
+</ul>
+
+<h1>三个均等列</h1>
+<p>该实例演示了如何创建三个均等列 (33.3%/33.3%/33.3%) ，在中型和大型设备上显示三个列，在小型设备上自动堆叠</p>
+<div class="row">
+    <h2>网格 - 三个均等列</h2>
+    <p>该实例演示了如何创建三个均等列 (33.3%/33.3%/33.3%) ，在中型和大型设备上显示三个列，在小型设备上自动堆叠。</p>
+    <p>重置浏览器窗口大小查看效果。</p>
+    <div class="medium-4 columns" style="background-color:yellow;">
+        <p>.medium-4</p>
+    </div>
+    <div class="medium-4 columns" style="background-color:pink;">
+        <p>.medium-4</p>
+    </div>
+    <div class="medium-4 columns" style="background-color:yellow;">
+        <p>.medium-4</p>
+    </div>
+</div>
+<h2>三个不均等列</h2>
+<p>该实例演示了如何创建三个不均等列 (25%/50%/25%)，在中型和大型设备上显示三个列，在小型设备上自动堆叠</p>
+<div class="row">
+    <div class="medium-3 columns" style="background-color:yellow;">
+        <p>.medium-3</p>
+    </div>
+    <div class="medium-6 columns" style="background-color:pink;">
+        <p>.medium-6</p>
+    </div>
+    <div class="medium-3 columns" style="background-color:yellow;">
+        <p>.medium-3</p>
+    </div>
+</div>
+<h2>两个均等列</h2>
+<p>该实例演示了如何创建两个均等列 (50%/50%)，在小型、中型和大型设备上列的比例始终为 50%/50%</p>
+<div class="row">
+    <div class="small-6 columns" style="background-color:yellow;">
+        <p>.small-6</p>
+    </div>
+    <div class="small-6 columns" style="background-color:pink;">
+        <p>.small-6</p>
+    </div>
+</div>
+<h2>两个不均等列</h2>
+<p>该实例演示了如何创建两个不均等列 (33.3%/66.6%)，在小型、中型和大型设备上列的比例始终为 33.3%/66.6%</p>
+<div class="row">
+    <div class="small-8 columns" style="background-color:yellow;">
+        <p>.small-8</p>
+    </div>
+    <div class="small-4 columns" style="background-color:pink;">
+        <p>.small-4</p>
+    </div>
+</div>
+<h2>修改列的顺序</h2>
+<p>通过使用 .small|medium|large-push-* 和 .small|medium|large-pull-* 类来修改列的顺序</p>
+<div class="row">
+    <h2>网格 - Push 和 Pull</h2>
+    <p>通过使用 <code>.small|medium|large-push-*</code> 和 <code>.small|medium|large-pull-*</code> 类来修改列的顺序:</p>
+    <div class="small-8 columns" style="background-color:yellow;">
+        <p>.small-8</p>
+    </div>
+    <div class="small-4 columns" style="background-color:pink;">
+        <p>.small-4</p>
+    </div>
+
+    <p>Switched:</p>
+    <div class="small-4 small-8-push columns" style="background-color:yellow;">
+        <p>.small-4 .small-8-push</p>
+    </div>
+    <div class="small-8 small-4-pull columns" style="background-color:pink;">
+        <p>.small-8 .small-4-pull</p>
+    </div>
+</div>
+
+<h2>使用嵌套网格(列中插入列)</h2>
+<div class="row">
+    <h2>网格 - 嵌套列</h2>
+    <p>列中插入列:</p>
+    <div class="small-8 columns" style="background-color:yellow;">.small-8
+        <div class="row">
+            <div class="small-8 columns" style="background-color:lightcyan;">.small-8 Nested
+                <div class="row">
+                    <div class="small-8 columns" style="background-color:lightblue;">.small-8 Nested Again</div>
+                    <div class="small-4 columns" style="background-color:lightgreen;">.small-4</div>
+                </div>
+            </div>
+            <div class="small-4 columns" style="background-color:lightgray;">.small-4</div>
+        </div>
+    </div>
+    <div class="small-4 columns" style="background-color:pink;">.small-4</div>
+</div>
+
+<div class="row">
+    <h2>混合：手机、桌面设备</h2>
+    <p>重置浏览器窗口大小查看效果。</p>
+    <div class="small-6 large-8 columns" style="background-color:yellow;">.small-6 .large-8</div>
+    <div class="small-6 large-4 columns" style="background-color:pink;">.small-6 .large-4</div>
+</div>
+<div class="row">
+    <div class="small-2 large-4 columns" style="background-color:lightblue;">.small-2 .large-2</div>
+    <div class="small-4 large-4 columns" style="background-color:yellow;">.small-4 .large-2</div>
+    <div class="small-6 large-4 columns" style="background-color:lightgreen;">.small-6 .large-2</div>
+</div>
+<div class="row">
+    <div class="small-3 large-5 columns" style="background-color:lightcyan;">.small-3 .large-5</div>
+    <div class="small-9 large-7 columns" style="background-color:lightgray;">.small-9 .large-7</div>
+</div>
+
+<div class="row">
+    <h2>混合：手机、平板和桌面设备</h2>
+    <p>重置浏览器窗口大小查看效果。</p>
+    <div class="medium-6 large-8 columns" style="background-color:red;">.medium-6 .large-8</div>
+    <div class="medium-6 large-4 columns" style="background-color:yellow;">.medium-6 .large-4</div>
+</div>
+<div class="row">
+    <div class="small-4 medium-3 large-7 columns" style="background-color:pink;">.small-4 .medium-3 .large-7</div>
+    <div class="small-4 medium-6 large-3 columns" style="background-color:lightgreen;">.small-4 .medium-6 .large-3</div>
+    <div class="small-4 medium-3 large-2 columns" style="background-color:orange;">.small-4 .medium-3 .large-2</div>
+</div>
+
+<div class="row">
+    <h2>网格 - 居中列</h2>
+    <p>列居中可以使用 <code>.small-centered</code> 类。中型和大型设备可以继承小型设备的居中，但你需要在大型设备上设置居中类<code>.large-centered</code> 。</p>
+    <p>重置浏览器窗口大小查看效果。</p>
+    <div class="small-4 small-centered columns" style="background-color:yellow;">small-4 small-centered</div>
+</div>
+<div class="row">
+    <div class="small-6 small-centered columns" style="background-color:pink;">small-6 small-centered</div>
+</div>
+<div class="row">
+    <div class="small-6 large-centered columns" style="background-color:lightgreen;">small-6 large-centered</div>
+</div>
+<div class="row">
+    <div class="small-8 small-centered large-uncentered columns" style="background-color:yellow;">small-8 small-centered large-uncentered</div>
+</div>
+<div class="row">
+    <div class="small-10 small-centered columns" style="background-color:pink;">small-10 small-centered</div>
+</div>
+
+<div class="row">
+    <h2>网格 - 偏移量</h2>
+    <p>可以使用 <code>.large-offset-*</code> (或 <code>.small-offset-*</code>) 类设置列向右移。 左侧外边距的列数量使用 * 号控制:</p>
+    <div class="large-1 columns" style="background-color:yellow;">1</div>
+    <div class="large-11 columns" style="background-color:pink;">11</div>
+</div>
+<div class="row">
+    <div class="large-1 columns" style="background-color:yellow;">1</div>
+    <div class="large-10 large-offset-1 columns" style="background-color:pink;">10, offset 1</div>
+</div>
+<div class="row">
+    <div class="large-1 columns" style="background-color:yellow;">1</div>
+    <div class="large-9 large-offset-2 columns" style="background-color:pink;">9, offset 2</div>
+</div>
+<div class="row">
+    <div class="large-1 columns" style="background-color:yellow;">1</div>
+    <div class="large-8 large-offset-3 columns" style="background-color:pink;">8, offset 3</div>
+</div>
+
+<div class="row">
+    <h2>不完整列</h2>
+    <p>如果一行中的列数量之和不是 12 , Foundation 将自动将最后一列向右浮动，并使用空白来填充剩下的列。</p>
+    <p>可选项 <code>.end</code> 类用于设置最后一列的元素向左边浮动:</p>
+    <div class="medium-3 columns" style="background-color:yellow;">.medium-3</div>
+    <div class="medium-3 columns" style="background-color:yellow;">.medium-3</div>
+    <div class="medium-3 columns" style="background-color:yellow;">.medium-3</div>
+</div>
+<div class="row">
+    <div class="medium-3 columns" style="background-color:pink;">.medium-3</div>
+    <div class="medium-3 columns" style="background-color:pink;">.medium-3</div>
+    <div class="medium-3 columns end" style="background-color:pink;">.medium-3 .end</div>
+</div>
+</body>
+</html>
+

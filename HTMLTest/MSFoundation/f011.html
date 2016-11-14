@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Foundation 实例</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/foundation/5.5.3/css/foundation.min.css">
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/foundation/5.5.3/js/foundation.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/foundation/5.5.3/js/vendor/modernizr.js"></script>
+
+    <style>
+        .example {
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<pre>
+    第一行的 &lt;div&gt; 类为 .small-12, 这会创建 12 列（100%宽度）。
+    第二行创建了两个列， .small-4 的宽度为33.3% ，.small-8 的宽度为 66.6%。
+    第三行我们添加了额外的两个列 (.large-3 和 .large-9)。
+    这意味着如果在大屏幕尺寸下，列就会变为 25% (.large-3) 和 75% (.large-9)的比例。
+    同时我们也指定了小屏幕上列的比例 33% (.small-4) 和 66% (.small-8) 。
+    这种组合的方式对于不同屏幕显示效果是非常有帮助的。
+</pre>
+<div class="row">
+    <h2>Foundation 网格</h2>
+    <p>重置窗口大小查看效果</p>
+    <div class="small-12 columns" style="background-color:yellow;">.small-12</div>
+</div>
+<div class="row">
+    <div class="small-8 columns" style="background-color:beige;">.small-8</div>
+    <div class="small-4 columns" style="background-color:gray;">.small-4</div>
+</div>
+<div class="row">
+    <div class="small-8 large-9 columns" style="background-color:pink;">.small-8 .large-9</div>
+    <div class="small-4 large-3 columns" style="background-color:orange;">.small-4 .large-3</div>
+</div>
+
+<h2>Foundation 网格 - 宽屏</h2>
+<p>默认情况下，网格最大(<code>.row</code>) 宽度为 62.5rem。在宽屏上，当宽度大于 62.5rem, 列不会跨越页面的宽度， 即使宽度设定为 100%。但你可以通过 CSS 重新设置 max-width:</p>
+<hr>
+
+<div class="row">
+    <p>基本行 (max-width:62.5rem):</p>
+    <div class="small-6 columns" style="background-color:yellow;">.small-6</div>
+    <div class="small-6 columns" style="background-color:pink;">.small-6</div>
+</div>
+<br>
+
+<div class="row example">
+    <p>行的max-width为 100% :</p>
+    <div class="small-6 columns" style="background-color:yellow;">.small-6</div>
+    <div class="small-6 columns" style="background-color:pink;">.small-6</div>
+</div>
+<br>
+
+
+<p>外层容器使用类 .row，并指定背景颜色跨越整个页面：</p>
+<p>如果你使用默认的 max-width, 但希望背景颜色跨越整个页面宽度，你可以使用 .row 包裹整个容器，并指定你需要的背景颜色</p>
+<div class="row" style="background-color:tomato;padding:25px;">
+    <p>Default Row with a tomato color and padding:</p>
+    <div class="small-6 columns" style="background-color:yellow;">.small-6</div>
+    <div class="small-6 columns" style="background-color:pink;">.small-6</div>
+</div>
+<br>
+
+<div class="container" style="background-color:coral;padding:25px;">
+    <div class="row">
+        <p>Row with container:</p>
+        <div class="small-6 columns" style="background-color:yellow;">.small-6</div>
+        <div class="small-6 columns" style="background-color:pink;">.small-6</div>
+    </div>
+</div>
+<br>
+
+<hr>
+<h1>Foundation 网格 - 水平堆叠</h1>
+<div class="row">
+    <h2>Foundation 网格</h2>
+    <p>两列网格堆叠实例。</p>
+    <p>重置浏览器窗口大小查看效果。</p>
+    <div class="medium-6 columns" style="background-color:yellow;">两列网格堆叠实例</div>
+    <div class="medium-6 columns" style="background-color:pink;">两列网格堆叠实例</div>
+</div>
+
+<h1>Foundation 网格 - 小型设备</h1>
+<p>比例为 25% 和 75% (Foundation 是移动优先: 如果没有特别说明，在大型设备上会继承 .small 类的代码): .small in them and use those</p>
+<div class="row">
+    <h2>Foundation 网格</h2>
+    <p>25%/75% 比例。</p>
+    <p>重置浏览器窗口大小查看效果。</p>
+    <div class="small-3 columns" style="background-color:yellow;">
+        <p>25%/75% 比例</p>
+    </div>
+    <div class="small-9 columns" style="background-color:pink;">
+        <p>25%/75% 比例</p>
+    </div>
+</div>
+
+<p>如果需要设置 33.3%/66.6% 的比例，你可以使用 .small-4 和 .small-8</p>
+<div class="row">
+    <h2>Foundation 网格</h2>
+    <p>33.3%/66.6% 比例。</p>
+    <p>重置浏览器窗口大小查看效果。</p>
+    <div class="small-4 columns" style="background-color:yellow;">
+        <p>33.3%/66.6% 比例</p>
+    </div>
+    <div class="small-8 columns" style="background-color:pink;">
+        <p>33.3%/66.6% 比例</p>
+    </div>
+</div>
+
+<h1>Foundation 网格 - 中型设备</h1>
+<p>小型设备上我们使用 .small-* 类来设置，网格比例为 25%/75%</p>
+<p>在中型设备上我们推荐的比例为 50%/50%。
+    提示: 中型设备的屏幕尺寸定义在 40.0625em 到 64.0624em 之间。</p>
+<p>中型设备上使用 .medium-* 类</p>
+<div class="row">
+    <h2>Foundation 网格</h2>
+    <p>中型或大型设备上是 50%/50% 比例 ，小型设备上比例是 25%/75%。</p>
+    <p>Resize the browser window to see the effect.</p>
+    <div class="small-3 medium-6 columns" style="background-color:yellow;">
+        <p>中型或大型设备上是 50%/50% 比例 </p>
+    </div>
+    <div class="small-9 medium-6 columns" style="background-color:pink;">
+        <p>中型或大型设备上是 50%/50% 比例 </p>
+    </div>
+</div>
+
+<h2>仅在中型设备上使用</h2>
+<p>指定 .medium-6 类 (不是 .small-*)。这表明在中型或大型设备上比例为 50%/50%。但在小型设备上会水平堆叠 (100% 宽度)</p>
+<div class="row">
+    <h2>Foundation 网格</h2>
+    <p>中型或大型设备上是 50%/50% 比例 ，小型设备上是水平堆叠 (100%).</p>
+    <p>重置浏览器窗口大小查看效果。</p>
+    <div class="medium-6 columns" style="background-color:yellow;">
+        <p>中型或大型设备上是 50%/50% 比例 </p>
+    </div>
+    <div class="medium-6 columns" style="background-color:pink;">
+        <p>中型或大型设备上是 50%/50% 比例 </p>
+    </div>
+</div>
+
+<hr>
+<h1>Foundation 网格 - 大型设备</h1>
+<pre>
+    中型设备和小型设备的网格布局，小型设备上使用的比例为 25%/75% (.small-3 和 .small-9)，
+    但在中型设备上使用的比例为 50%/50% (.medium-6 和 .medium-6)
+    在大型设备上我们推荐的比例为 33%/66%。
+提示: 大型设备的屏幕尺寸定义大于 64.0625em。
+大型设备上使用 .large-* 类。
+</pre>
+<pre>
+    小型设备两个列的比例为 25%/75% (.small-3 和 .small-9)
+    中型设备两个列的比例为 50%/50% (.medium-6 和 .medium-6)
+    大型设备两个列的比例为 33%/66% (.large-4 和 .large-8)
+</pre>
+<div class="row">
+    <h2>Foundation 网格</h2>
+    <p>大型设备上的比例为 33%/66%， 中型设备比例为 50%/50% ，小型设备比例为 25%/75% 。</p>
+    <p>重置浏览器窗口大小查看效果。</p>
+    <div class="small-3 medium-6 large-4 columns" style="background-color:yellow;">
+        <p>大型设备上的比例为 33%/66%</p>
+    </div>
+    <div class="small-9 medium-6 large-8 columns" style="background-color:pink;">
+        <p>大型设备上的比例为 33%/66%</p>
+    </div>
+</div>
+
+<h2>仅在大型设备上使用</h2>
+<p>指定了 .large-6 类 (不是 .medium-* 和 .small-*)。这表明在大型设备上比例为 50%/50%。但在中型或小型设备上会水平堆叠 (100% 宽度)</p>
+<div class="row">
+    <h2>Foundation 网格</h2>
+    <p>大型设备上的比例为 50%/50%。小型和中型设备会水平堆叠(100%)。</p>
+    <p>重置浏览器窗口大小查看效果。</p>
+    <div class="large-6 columns" style="background-color:yellow;">
+        <p>菜鸟教程</p>
+    </div>
+    <div class="large-6 columns" style="background-color:pink;">
+        <p>菜鸟教程</p>
+    </div>
+</div>
+</body>
+</html>
+

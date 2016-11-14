@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Foundation 实例</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/foundation/5.5.3/css/foundation.min.css">
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/foundation/5.5.3/js/foundation.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/foundation/5.5.3/js/vendor/modernizr.js"></script>
+</head>
+
+<body>
+<!--Joyride 是一个功能向导的 JavaScript 效果-->
+<h2>Joyride 实例 - Joyride 是一个功能向导的 JavaScript 效果</h2>
+<p> joyride 在页面载入后生效。</p>
+
+<h3 id="first">第一个停止位置!</h3><br>
+<h3 id="second">第二个停止位置!</h3>
+
+<ol class="joyride-list" data-joyride>
+    <li data-id="first">
+        <p>这是一个 Joyride。你可以点击 "x" 按钮关闭它。</p>
+        <p>注意以下按钮，你带你倒下一个功能导航。</p>
+    </li>
+    <li data-id="second">
+        <h4>第二个停止位置 Stop</h4>
+        <p>你可以在这使用任何 HTML 代码</p>
+    </li>
+    <li data-button="End">
+        <h4>结束位置</h4>
+        <p>结束位置，你可以从头开始，或者关闭它。</p>
+    </li>
+</ol>
+
+
+<div class="row" data-equalizer>
+    <h2>Foundation 均衡器(</h2>
+    <p>相等高度容器:</p>
+    <div class="medium-4 columns panel" data-equalizer-watch>
+        <p>相等高度容器,相等高度容器</p>
+        <p>相等高度容器,相等高度容器</p>
+        <p><strong>我是最高的元素。其他元素使用我的搞定。</strong></p>
+    </div>
+    <div class="medium-4 columns panel" data-equalizer-watch>
+        <p>相等高度容器,相等高度容器</p>
+        <p>相等高度容器,相等高度容器</p>
+    </div>
+    <div class="medium-4 columns panel" data-equalizer-watch>
+        <p>相等高度容器,相等高度容器</p>
+    </div>
+</div>
+
+<div class="row" data-equalizer data-equalizer-mq="large-up">
+    <h2>响应式均衡器</h2>
+    <p>该实例我们添加了 <code>data-equalizer-mq="large-up"</code> 属性，这会创建一个相同宽度大于 64.063em 的容器，重置窗口大小查看效果。</p>
+    <div class="medium-4 columns panel" data-equalizer-watch>
+        <p>响应式均衡器</p>
+        <p>响应式均衡器</p>
+        <p><strong>我是最高的元素。其他元素使用我的搞定。</strong></p>
+    </div>
+    <div class="medium-4 columns panel" data-equalizer-watch>
+        <p>响应式均衡器</p>
+    </div>
+    <div class="medium-4 columns panel" data-equalizer-watch>
+        <p>响应式均衡器</p>
+    </div>
+</div>
+
+<div class="row" data-equalizer="first">
+    <h2>内嵌均衡器</h2>
+    <p>一个均衡容器内嵌入另一个均衡容器:</p>
+    <div class="medium-4 columns">
+        <div class="panel" data-equalizer-watch="first">
+            <h3>面板</h3>
+            <div class="row" data-equalizer="second">
+                <div class="panel" data-equalizer-watch="second">
+                    <h3>内嵌面板</h3>
+                    <p>内嵌均衡器</p>
+                </div>
+                <div class="panel" data-equalizer-watch="second">
+                    <h3>内嵌面板</h3>
+                    <p>内嵌均衡器</p>
+                </div>
+                <div class="panel" data-equalizer-watch="second">
+                    <h3>内嵌面板</h3>
+                    <p>内嵌均衡器</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="medium-4 columns">
+        <div class="panel" data-equalizer-watch="first">
+            <h3>面板</h3>
+            <p>内嵌均衡器</p>
+            <p>内嵌均衡器</p>
+        </div>
+    </div>
+    <div class="medium-4 columns">
+        <div class="panel" data-equalizer-watch="first">
+            <h3>面板</h3>
+            <p>内嵌均衡器</p>
+        </div>
+    </div>
+</div>
+
+<!-- 初始化 Foundation JS -->
+<script>
+    $(document).ready(function() {
+        $(document).foundation('joyride', 'start');
+    })
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Foundation 实例</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/foundation/5.5.3/css/foundation.min.css">
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/foundation/5.5.3/js/foundation.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/foundation/5.5.3/js/vendor/modernizr.js"></script>
+</head>
+
+<body style="padding:20px;">
+
+<h2>提示框</h2>
+<span data-tooltip title="菜鸟教程">鼠标移到我这!</span>
+<span data-tooltip class="has-tip" title="菜鸟教程">【加粗文本】鼠标移到我这!</span>
+<a href="#" data-tooltip class="button" title="www.runoob.com">鼠标移到我这!</a>
+
+<h2>提示框显示位置</h2>
+<p>默认情况下，提示框会出现在元素的底部。</p>
+<p>可以使用 <code>.tip-top</code>, <code>.tip-left</code>, <code>.tip-right</code> or <code>.tip-bottom</code> (默认) 来设置提示框的位置。</p>
+<p><strong>注意:</strong> 在小尺寸的屏幕上，提示框的宽带是 100%。</p>
+<span data-tooltip class="has-tip tip-top" title="菜鸟教程!">顶部</span>
+<span data-tooltip class="has-tip tip-bottom" title="菜鸟教程!">底部</span>
+<span data-tooltip class="has-tip tip-left" title="www.runoob.com">左边</span>
+<span data-tooltip class="has-tip tip-right" title="www.runoob.com">右边</span>
+
+<h2>圆角提示框</h2>
+<p> <code>.radius</code> 和 <code>.round</code> 类用于设置圆角提示框：</p>
+<span data-tooltip class="has-tip" title="菜鸟教程!">默认</span>
+<span data-tooltip class="has-tip radius" title="菜鸟教程!">圆角</span>
+<span data-tooltip class="has-tip round" title="菜鸟教程!">圆形</span>
+
+
+<hr>
+<h1>模态框</h1>
+<div style="padding:20px;">
+    <h2>模态框</h2>
+    <p>模态框是一个显示在页面头部的弹窗。</p>
+    <button type="button" class="button" data-reveal-id="myModal">点我打开模态框</button>
+
+    <div id="myModal" class="reveal-modal" data-reveal>
+        <h2>Heading in Modal.</h2>
+        <p>Some text in the modal.</p>
+        <p>Some text in the modal.</p>
+        <a class="close-reveal-modal">&times;</a>
+    </div>
+</div>
+
+<div style="padding:20px;">
+    <h2>模态框大小</h2>
+    <p>使用以下类来修改模态框大小:</p>
+    <ul>
+        <li><code>.tiny</code>: 设置宽度为 30%</li>
+        <li><code>.small</code>: 设置宽度为 40%</li>
+        <li><code>.medium</code>: 设置宽度为 60%</li>
+        <li><code>.large</code>: 设置宽度为 70%</li>
+        <li><code>.xlarge</code>: 设置宽度为 95%</li>
+        <li><code>.full</code>: 设置宽度喝高度为 100%</li>
+    </ul>
+    <p><strong>注意: </strong>在平板、笔记本、PC 电脑上默认为 80% 宽度，在小屏幕设备上是 100% 宽度。</p>
+    <button type="button" class="button" data-reveal-id="myModal2">打开小个模态框</button>
+
+    <div id="myModal2" class="reveal-modal tiny" data-reveal>
+        <h2>小个模态框</h2>
+        <p>这是一个小个模态框。尝试使用不同的类来修改模态框大小。</p>
+        <a class="close-reveal-modal">&times;</a>
+    </div>
+</div>
+
+<div style="padding:20px;">
+    <h2>内嵌模态框</h2>
+    <!-- 触发模态框 -->
+    <button type="button" class="button" data-reveal-id="myModal3">点击打开模态框</button>
+
+    <!-- 第一个模态框 -->
+    <div id="myModal3" class="reveal-modal" data-reveal>
+        <h2>第一个模态框</h2>
+        <p>点击以下按钮会打开一个新的模态框。如果打开新的模态框，那么第一个模态框就会被关闭。</p>
+        <p><a href="#" data-reveal-id="secondModal" class="button success">打开第二个模态框</a></p>
+        <a class="close-reveal-modal">&times;</a>
+    </div>
+
+    <!-- 第二个模态框 -->
+    <div id="secondModal" class="reveal-modal" data-reveal>
+        <h2>第二个模态框</h2>
+        <p>第二个模态框，第一个模态框已关闭。</p>
+        <p>Foundation 让新的模态框取代了第一个模态框。</p>
+        <a class="close-reveal-modal">&times;</a>
+    </div>
+</div>
+
+<pre>
+    第二个模态框会取代第一个模态框。如果你希望在打开第二个模态框时，不关闭第一个模态框。
+    可以在第二个模态框上添加 data-options="multiple_opened:true;" 属性
+</pre>
+<div style="padding:20px;">
+    <h2>内嵌模态框</h2>
+    <!-- 触发模态框 -->
+    <button type="button" class="button" data-reveal-id="myModal10">点击打开模态框</button>
+
+    <!-- 第一个模态框 -->
+    <div id="myModal10" class="reveal-modal" data-reveal>
+        <h2>第一个模态框</h2>
+        <p>点击以下按钮会打开一个新的模态框。如果打开新的模态框，那么第一个模态框就会被关闭。</p>
+        <p><a href="#" data-reveal-id="secondModal10" class="button success" style="text-decoration:none;">打开第二个模态框</a></p>
+        <a class="close-reveal-modal">&times;</a>
+    </div>
+
+    <!-- 第二个模态框 -->
+    <div id="secondModal10" class="reveal-modal" data-reveal data-options="multiple_opened:true;">
+        <h2>第二个模态框</h2>
+        <p>第二个模态框，第一个模态在第二个模态框下面，并没有关闭。</p>
+
+        <a class="close-reveal-modal">&times;</a>
+    </div>
+</div>
+
+<!-- 初始化 Foundation JS -->
+<script>
+    $(document).ready(function() {
+        $(document).foundation();
+    })
+</script>
+
+</body>
+</html>
+
