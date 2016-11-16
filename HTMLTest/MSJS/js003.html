@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript 错误 - throw、try 和 catch</title>
+
+    <script>
+        function myFunction(){
+            try{
+                var x=document.getElementById("demo").value;
+                if(x=="")    throw "值为空";
+                if(isNaN(x)) throw "不是数字";
+                if(x>10)     throw "太大";
+                if(x<5)      throw "太小";
+            }
+            catch(err){
+                var y=document.getElementById("mess");
+                y.innerHTML="错误：" + err + "。";
+            }
+        }
+    </script>
+</head>
+<body>
+<h1>JavaScript 错误 - throw、try 和 catch</h1>
+<p>请输出一个 5 到 10 之间的数字:</p>
+<input id="demo" type="text">
+<button type="button" onclick="myFunction()">测试输入</button>
+<p id="mess"></p>
+
+<h1>浮点型数据使用注意事项</h1>
+<!--z 不是0.3-->
+<p id="demo2"></p>
+<script>
+    var x = 0.1;
+    var y = 0.2;
+    var z = x + y;
+    document.getElementById("demo2").innerHTML = z;
+</script>
+<!--用整数的乘除法来解决-->
+<p id="demo3"></p>
+<script>
+    var x = 0.1;
+    var y = 0.2;
+    var z = (x * 10 + y *10) / 10;
+    document.getElementById("demo3").innerHTML = z;
+</script>
+
+<h1>字符串断行需要使用反斜杠(\)</h1>
+<p id="demo4"></p>
+<script>
+    document.getElementById("demo4").innerHTML = "Hello \
+World!";
+</script>
+
+<h1>程序块作用域</h1>
+<p>在每个代码块中 JavaScript 不会创建一个新的作用域，一般各个代码块的作用域都是全局的。</p>
+<p>变量 i 返回 10，而不是 undefined</p>
+<p id="demo5"></p>
+<script>
+    for (var i = 0; i < 10; i++) {
+        // some code
+    }
+    document.getElementById("demo5").innerHTML = i;
+</script>
+</body>
+</html>

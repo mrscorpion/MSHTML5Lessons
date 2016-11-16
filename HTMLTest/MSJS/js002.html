@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript 对象</title>
+</head>
+<body>
+<p>创建 JavaScript 对象1。</p>
+<p id="demo"></p>
+<script>
+    var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+    document.getElementById("demo").innerHTML =
+            person.firstName + " 现在 " + person.age + " 岁.";
+</script>
+<p>创建 JavaScript 对象2</p>
+<p id="demo2"></p>
+<script>
+    var person = {
+        firstName : "John",
+        lastName  : "Doe",
+        age       : 50,
+        eyeColor  : "blue"
+    };
+    document.getElementById("demo2").innerHTML =
+            person.firstName + " 现在 " + person.age + " 岁。";
+</script>
+<p>
+    有两种方式可以访问对象属性：访问对象属性 I
+</p>
+<p>
+    你可以使用 .property 或 ["property"].
+</p>
+<p id="demo3"></p>
+<script>
+    var person = {
+        firstName : "John",
+        lastName : "Doe",
+        id : 5566
+    };
+    document.getElementById("demo3").innerHTML =
+            person.firstName + " " + person.lastName;
+</script>
+<p>
+    访问对象属性 II
+</p>
+<p id="demo4"></p>
+<script>
+    var person = {
+        firstName: "John",
+        lastName : "Doe",
+        id : 5566
+    };
+    document.getElementById("demo4").innerHTML =
+            person["firstName"] + " " + person["lastName"];
+</script>
+<p>创建和使用对象方法。 - 函数属性作为一个方法访问</p>
+<p>对象方法作为一个函数定义存储在对象属性中。</p>
+<p id="demo5"></p>
+<script>
+    var person = {
+        firstName: "John",
+        lastName : "Doe",
+        id : 5566,
+        fullName : function()
+        {
+            return this.firstName + " " + this.lastName;
+        }
+    };
+    document.getElementById("demo5").innerHTML = person.fullName();
+</script>
+<p>创建和使用对象方法。 - 函数属性作为一个属性访问</p>
+<p>对象方法是一个函数定义,并作为一个属性值存储。</p>
+<p id="demo6"></p>
+<script>
+    var person = {
+        firstName: "John",
+        lastName : "Doe",
+        id : 5566,
+        fullName : function()
+        {
+            return this.firstName + " " + this.lastName;
+        }
+    };
+    document.getElementById("demo6").innerHTML = person.fullName;
+</script>
+
+<h1>代码将修改自身元素的内容 (使用 this.innerHTML)</h1>
+<button onclick="this.innerHTML=Date()">现在的时间是?</button>
+
+<h1>可以在字符串添加转义字符来使用引号</h1>
+<p id="demo7"></p>
+<script>
+    var x = 'It\'s alright';
+    var y = "He is called \"Johnny\"";
+    document.getElementById("demo7").innerHTML = x + "<br>" + y;
+</script>
+
+<h1>字符串可以是对象</h1>
+<p>不要创建 String 对象。它会拖慢执行速度，并可能产生其他副作用</p>
+<p id="demo8"></p>
+<script>
+    var x = "John";              // x是一个字符串
+    var y = new String("John");  // y是一个对象
+    document.getElementById("demo8").innerHTML =typeof x + " " + typeof y;
+</script>
+
+<h1>条件运算符</h1>
+<p>点击按钮检测年龄。</p>
+年龄:<input id="age" value="18" />
+<p>是否达到投票年龄?</p>
+<button onclick="myFunction()">点击按钮</button>
+<p id="demo9"></p>
+<script>
+    function myFunction()
+    {
+        var age,voteable;
+        age=document.getElementById("age").value;
+        voteable=(age<18)?"年龄太小":"年龄已达到";
+        document.getElementById("demo9").innerHTML=voteable;
+    }
+</script>
+
+
+<h1>随机链接</h1>
+<p id="demo10"></p>
+<script>
+    var r=Math.random();
+    var x=document.getElementById("demo10")
+    if (r>0.5){
+        x.innerHTML="<a href='http://www.apple.com'>apple</a>";
+    }
+    else{
+        x.innerHTML="<a href='http://mrscorpion.github.io'>Visit blog</a>";
+    }
+</script>
+
+<p>点击下面的按钮来显示今天是周几：</p>
+<button onclick="myFunction()">点击这里</button>
+<p id="demo11"></p>
+<script>
+    function myFunction(){
+        var x;
+        var d=new Date().getDay();
+        switch (d){
+            case 0:x="今天是星期日";
+                break;
+            case 1:x="今天是星期一";
+                break;
+            case 2:x="今天是星期二";
+                break;
+            case 3:x="今天是星期三";
+                break;
+            case 4:x="今天是星期四";
+                break;
+            case 5:x="今天是星期五";
+                break;
+            case 6:x="今天是星期六";
+                break;
+            default:
+                break;
+        }
+        document.getElementById("demo11").innerHTML=x;
+    }
+</script>
+
+<h1>JavaScript for 循环</h1>
+<script>
+    cars=["BMW","Volvo","Saab","Ford"];
+    for (var i=0;i<cars.length;i++){
+        document.write(cars[i] + "<br>");
+    }
+</script>
+
+<p>点击下面的按钮，循环遍历对象 "person" 的属性。</p>
+<button onclick="myFunction()">点击这里</button>
+<p id="demo12"></p>
+<script>
+    function myFunction(){
+        var x;
+        var txt="";
+        var person={fname:"Bill",lname:"Gates",age:56};
+        for (x in person){
+            txt=txt + person[x];
+        }
+        document.getElementById("demo12").innerHTML=txt;
+    }
+</script>
+
+<script>
+    cars=["BMW","Volvo","Saab","Ford"];
+    list:{
+        document.write(cars[0] + "<br>");
+        document.write(cars[1] + "<br>");
+        document.write(cars[2] + "<br>");
+        break list;
+        document.write(cars[3] + "<br>");
+        document.write(cars[4] + "<br>");
+        document.write(cars[5] + "<br>");
+    }
+</script>
+</body>
+</html>
