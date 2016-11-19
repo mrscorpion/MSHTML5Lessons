@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js">
+    </script>
+    <script>
+        $(document).ready(function(){
+            $("#flip").click(function(){
+                $("#panel").slideToggle("slow");
+            });
+
+            $("button.animation").click(function(){
+                $("div.animation").animate({
+                    left:'250px',
+                    opacity:'0.5',
+                    height:'150px',
+                    width:'150px'
+                });
+            });
+
+            $("button.queue").click(function(){
+                var div=$("div.queue");
+                div.animate({left:'100px'},"slow");
+                div.animate({fontSize:'3em'},"slow");
+            });
+
+//             回调函数
+            $("p.h").click(function(){
+                $(this).hide("slow",function(){
+                    alert("段落现在被隐藏了");
+                });
+            });
+
+            $("#p1").click(function(){
+                $("#p1").css("color","red").slideUp(2000).slideDown(2000);
+            });
+
+
+            $("#p2").click(function(){
+                alert("值为: " + $("#test").val());
+            });
+        });
+    </script>
+
+    <style type="text/css">
+        #panel,#flip
+        {
+            padding:5px;
+            text-align:center;
+            background-color:#e5eecc;
+            border:solid 1px #c3c3c3;
+        }
+        #panel
+        {
+            padding:50px;
+            display:none;
+        }
+    </style>
+</head>
+<body>
+
+<div id="flip">点我，显示或隐藏面板。</div>
+<div id="panel">Hello world!</div>
+
+<button class="animation">开始动画</button>
+<p>默认情况下，所有的 HTML 元素有一个静态的位置，且是不可移动的。
+    如果需要改变为，我们需要将元素的 position 属性设置为 relative, fixed, 或 absolute!</p>
+<div class="animation" style="background:#98bf21;height:100px;width:100px;position:absolute;">
+</div>
+
+<br><br><br><br><br><br><br><br><br>
+<button class="queue">开始动画2</button>
+<p class="h">relative : 生成相对定位的元素，相对于其正常位置进行定位。
+    因此，"left:20" 会向元素的 LEFT 位置添加 20 像素</p>
+<div class="queue" style="background:#98bf21;height:100px;width:200px;position:relative;">HELLO</div>
+
+<p id="p1">链式调用</p>
+
+<p id="p2">名称: <input type="text" id="test" value="通过 jQuery val() 方法获得输入字段的值"></p>
+</body>
+</html>

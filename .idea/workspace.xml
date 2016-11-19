@@ -2,24 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eefe44cf-f2cf-458d-980d-6e4a38c23d29" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HTMLTest/MSJS/pic_bulboff.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HTMLTest/MSJS/pic_bulbon.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HTMLTest/MSJS/JS001.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HTMLTest/MSJS/demo_form.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HTMLTest/MSJS/jqueryJsonp.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HTMLTest/MSJS/js002.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HTMLTest/MSJS/js003.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HTMLTest/MSJS/js004.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HTMLTest/MSJS/js005.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HTMLTest/MSJS/js006.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HTMLTest/MSJS/js007.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HTMLTest/MSJS/js008.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HTMLTest/MSJS/jsonp.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HTMLTest/MSJS/jsonp.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HTMLTest/MSJS/myScript.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HTMLTest/MSJS/tsconfig.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MSPHP/PHPTest/t001.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HTMLTest/MSHTMLDom/d001.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HTMLTest/MSHTMLDom/d002.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HTMLTest/MSHTMLDom/d003.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HTMLTest/MSHTMLDom/d004.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HTMLTest/MSHTMLDom/demoform.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HTMLTest/MSJS/js009.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HTMLTest/MSJS/js010.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HTMLTest/MSJS/js011.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HTMLTest/MSJS/js012.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HTMLTest/MSJS/js013.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HTMLTest/MSJS/js015.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HTMLTest/MSJS/js14.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HTMLTest/MSjQuery/ajaxDemo.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HTMLTest/MSjQuery/demo_test.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HTMLTest/MSjQuery/demo_test_post.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HTMLTest/MSjQuery/jq001.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HTMLTest/MSjQuery/jq002.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HTMLTest/MSjQuery/jq003.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HTMLTest/MSjQuery/jq004.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HTMLTest/MSjQuery/jq005.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HTMLTest/MSjQuery/jq006.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HTMLTest/MSjQuery/jsonp.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HTMLTest/MSjQuery/jsonp.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HTMLTest/MSjQuery/my_jquery_functions.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HTMLTest/test01.html" afterPath="$PROJECT_DIR$/HTMLTest/test01.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HTMLTest/test02.html" afterPath="$PROJECT_DIR$/HTMLTest/test02.html" />
     </list>
     <ignored path="MSHTML5Lessons.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,21 +51,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="js004.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HTMLTest/MSJS/js004.html">
+      <file leaf-file-name="demo_form.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/HTMLTest/MSJS/demo_form.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="795">
-              <caret line="53" column="9" selection-start-line="53" selection-start-column="9" selection-end-line="53" selection-end-column="9" />
+            <state relative-caret-position="120">
+              <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="js008.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/HTMLTest/MSJS/js008.html">
+      <file leaf-file-name="demo_test.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HTMLTest/MSjQuery/demo_test.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="421">
-              <caret line="93" column="5" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -67,10 +76,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="tsconfig.json" />
-        <option value="php" />
+        <option value="XSLT Stylesheet" />
+        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="php" />
       </list>
     </option>
   </component>
@@ -80,14 +90,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/HTMLTest/MSFoundation/f008.html" />
-        <option value="$PROJECT_DIR$/HTMLTest/MSFoundation/f009.html" />
-        <option value="$PROJECT_DIR$/HTMLTest/MSFoundation/f010.html" />
-        <option value="$PROJECT_DIR$/HTMLTest/MSFoundation/f011.html" />
-        <option value="$PROJECT_DIR$/HTMLTest/MSFoundation/f012.html" />
-        <option value="$PROJECT_DIR$/HTMLTest/test04.html" />
-        <option value="$PROJECT_DIR$/HTMLTest/MSShare/test05.html" />
-        <option value="$PROJECT_DIR$/HTMLTest/test06.html" />
         <option value="$PROJECT_DIR$/HTMLTest/test07.html" />
         <option value="$PROJECT_DIR$/HTMLTest/test08.html" />
         <option value="$PROJECT_DIR$/HTMLTest/test09.html" />
@@ -112,6 +114,33 @@
         <option value="$PROJECT_DIR$/HTMLTest/MSJS/demo_form.php" />
         <option value="$PROJECT_DIR$/HTMLTest/MSJS/js004.html" />
         <option value="$PROJECT_DIR$/HTMLTest/MSJS/js008.html" />
+        <option value="$PROJECT_DIR$/HTMLTest/MSJS/js009.html" />
+        <option value="$PROJECT_DIR$/HTMLTest/MSJS/js010.html" />
+        <option value="$PROJECT_DIR$/HTMLTest/MSJS/js011.html" />
+        <option value="$PROJECT_DIR$/HTMLTest/MSJS/js012.html" />
+        <option value="$PROJECT_DIR$/HTMLTest/MSJS/js013.html" />
+        <option value="$PROJECT_DIR$/HTMLTest/MSJS/js14.html" />
+        <option value="$PROJECT_DIR$/HTMLTest/MSJS/js015.html" />
+        <option value="$PROJECT_DIR$/HTMLTest/test02.html" />
+        <option value="$PROJECT_DIR$/HTMLTest/test01.html" />
+        <option value="$PROJECT_DIR$/HTMLTest/MSHTMLDom/d001.html" />
+        <option value="$PROJECT_DIR$/HTMLTest/MSHTMLDom/d002.html" />
+        <option value="$PROJECT_DIR$/HTMLTest/MSHTMLDom/d003.html" />
+        <option value="$PROJECT_DIR$/HTMLTest/MSHTMLDom/d004.html" />
+        <option value="$PROJECT_DIR$/HTMLTest/MSHTMLDom/demoform.php" />
+        <option value="$PROJECT_DIR$/HTMLTest/test100.html" />
+        <option value="$PROJECT_DIR$/HTMLTest/MSjQuery/my_jquery_functions.js" />
+        <option value="$PROJECT_DIR$/HTMLTest/MSjQuery/jq001.html" />
+        <option value="$PROJECT_DIR$/HTMLTest/MSjQuery/jq002.html" />
+        <option value="$PROJECT_DIR$/HTMLTest/MSjQuery/jq003.html" />
+        <option value="$PROJECT_DIR$/HTMLTest/MSjQuery/jq004.html" />
+        <option value="$PROJECT_DIR$/HTMLTest/MSjQuery/ajaxDemo.txt" />
+        <option value="$PROJECT_DIR$/HTMLTest/MSjQuery/jq005.html" />
+        <option value="$PROJECT_DIR$/HTMLTest/MSjQuery/demo_test.php" />
+        <option value="$PROJECT_DIR$/HTMLTest/MSjQuery/demo_test_post.php" />
+        <option value="$PROJECT_DIR$/HTMLTest/MSjQuery/jq006.html" />
+        <option value="$PROJECT_DIR$/HTMLTest/MSjQuery/jsonp.php" />
+        <option value="$PROJECT_DIR$/HTMLTest/MSjQuery/jsonp.html" />
       </list>
     </option>
   </component>
@@ -122,10 +151,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="171" />
-    <option name="y" value="46" />
-    <option name="width" value="1049" />
-    <option name="height" value="700" />
+    <option name="x" value="106" />
+    <option name="y" value="39" />
+    <option name="width" value="985" />
+    <option name="height" value="607" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -152,6 +181,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -202,10 +233,26 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MSHTML5Lessons" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MSHTML5Lessons" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HTMLTest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MSjQuery" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -214,6 +261,8 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -294,17 +343,24 @@
       <workItem from="1479180513097" duration="2781000" />
       <workItem from="1479195641633" duration="165000" />
       <workItem from="1479200273923" duration="1143000" />
+      <workItem from="1479280382498" duration="2801000" />
+      <workItem from="1479300304582" duration="428000" />
+      <workItem from="1479353611314" duration="1545000" />
+      <workItem from="1479358396136" duration="471000" />
+      <workItem from="1479359206514" duration="60000" />
+      <workItem from="1479363515667" duration="5703000" />
+      <workItem from="1479462281124" duration="613000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20238000" />
+    <option name="totallyTimeSpent" value="31859000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="171" y="46" width="1049" height="700" extended-state="0" />
+    <frame x="106" y="39" width="985" height="607" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21058092" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -338,202 +394,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/HTMLTest/test08.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTMLTest/test09.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1245">
-          <caret line="83" column="6" selection-start-line="83" selection-start-column="6" selection-end-line="83" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTMLTest/test10.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1950">
-          <caret line="130" column="0" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTMLTest/test11.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTMLTest/test12.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1950">
-          <caret line="130" column="0" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTMLTest/test13.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="38" column="41" selection-start-line="38" selection-start-column="41" selection-end-line="38" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTMLTest/test14.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTMLTest/test15.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTMLTest/test02.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTMLTest/MSFoundation/f007.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTMLTest/MSFoundation/f006.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTMLTest/MSFoundation/f005.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-779">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTMLTest/MSFoundation/f004.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6615">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTMLTest/MSFoundation/f003.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1170">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTMLTest/MSFoundation/f002.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4890">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTMLTest/MSFoundation/f001.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3599">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTMLTest/MSFoundation/f011.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="61">
-          <caret line="161" column="26" selection-start-line="161" selection-start-column="26" selection-end-line="161" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTMLTest/MSFoundation/f010.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1470">
-          <caret line="98" column="34" selection-start-line="98" selection-start-column="34" selection-end-line="98" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTMLTest/MSFoundation/f009.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1291">
-          <caret line="96" column="6" selection-start-line="96" selection-start-column="6" selection-end-line="96" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTMLTest/MSFoundation/f008.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6961">
-          <caret line="468" column="75" selection-start-line="468" selection-start-column="75" selection-end-line="468" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTMLTest/MSFoundation/f012.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="31">
-          <caret line="173" column="6" selection-start-line="173" selection-start-column="6" selection-end-line="173" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTMLTest/test06.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="6" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTMLTest/test07.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-314">
-          <caret line="29" column="32" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTMLTest/test08.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTMLTest/test09.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1245">
-          <caret line="83" column="6" selection-start-line="83" selection-start-column="6" selection-end-line="83" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTMLTest/test10.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1950">
-          <caret line="130" column="0" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTMLTest/test11.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTMLTest/test12.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1950">
-          <caret line="130" column="0" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HTMLTest/test05.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -644,13 +504,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HTMLTest/MSJS/demo_form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HTMLTest/MSJS/js002.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2455">
@@ -683,14 +536,217 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="795">
           <caret line="53" column="9" selection-start-line="53" selection-start-column="9" selection-end-line="53" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/HTMLTest/MSJS/js008.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="93" column="5" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
+        <state relative-caret-position="196">
+          <caret line="78" column="31" selection-start-line="78" selection-start-column="31" selection-end-line="78" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTMLTest/MSJS/js009.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="9" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTMLTest/MSJS/js010.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTMLTest/MSJS/js011.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTMLTest/MSJS/js012.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTMLTest/MSJS/js013.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1770">
+          <caret line="118" column="44" selection-start-line="118" selection-start-column="44" selection-end-line="118" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTMLTest/MSJS/js14.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1530">
+          <caret line="102" column="26" selection-start-line="102" selection-start-column="26" selection-end-line="102" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTMLTest/MSJS/js015.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="7" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTMLTest/test03.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="23" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTMLTest/test01.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="19" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTMLTest/MSHTMLDom/d001.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTMLTest/MSHTMLDom/d002.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="5" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTMLTest/MSHTMLDom/d003.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTMLTest/test100.html" />
+    <entry file="file://$PROJECT_DIR$/HTMLTest/MSHTMLDom/d004.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="60" selection-start-line="10" selection-start-column="60" selection-end-line="10" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTMLTest/MSHTMLDom/demoform.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTMLTest/test02.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTMLTest/MSjQuery/jq001.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="13" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTMLTest/MSjQuery/jq002.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTMLTest/MSjQuery/jq003.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTMLTest/MSjQuery/jq004.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="47" column="13" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTMLTest/MSjQuery/ajaxDemo.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="21" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTMLTest/MSjQuery/jq005.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="80" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTMLTest/MSjQuery/my_jquery_functions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTMLTest/MSjQuery/jq006.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTMLTest/MSjQuery/demo_test_post.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTMLTest/MSjQuery/jsonp.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTMLTest/MSjQuery/jsonp.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="8" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTMLTest/MSjQuery/demo_test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTMLTest/MSJS/demo_form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
           <folding />
         </state>
       </provider>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>菜鸟教程(runoob.com)</title>
+    <script>
+        function openWin(){
+            myWindow=window.open("","","width=200,height=100");
+            myWindow.document.write("<p>这是'我的窗口'</p>");
+
+//            传输一些文本到源（父）窗口
+            myWindow.focus();
+            myWindow.opener.document.write("<p>这个是源窗口!</p>");
+        }
+        function closeWin(){
+            myWindow.close();
+        }
+
+        // 检查新的窗口是否已关闭
+        function checkWin(){
+            if (!myWindow){
+                document.getElementById("msg").innerHTML="我的窗口没有被打开!";
+            }
+            else{
+                if (myWindow.closed){
+                    document.getElementById("msg").innerHTML="我的窗口被关闭!";
+                }
+                else{
+                    document.getElementById("msg").innerHTML="我的窗口没有被关闭!";
+                }
+            }
+        }
+
+//        移动我的窗口
+        function moveWin(){
+            myWindow.moveBy(250,250);
+            myWindow.focus();
+        }
+    </script>
+</head>
+<body>
+
+<input type="button" value="打开我的窗口" onclick="openWin()" />
+<input type="button" value="关闭我的窗口" onclick="closeWin()" />
+<br><br>
+<input type="button" value="移动我的窗口" onclick="moveWin()" />
+
+<hr>
+<h1>Navigator 对象</h1>
+<div id="example"></div>
+<script>
+    txt = "<p>浏览器代号: " + navigator.appCodeName + "</p>";
+    txt+= "<p>浏览器名称: " + navigator.appName + "</p>";
+    txt+= "<p>浏览器版本: " + navigator.appVersion + "</p>";
+    txt+= "<p>启用Cookies: " + navigator.cookieEnabled + "</p>";
+    txt+= "<p>硬件平台: " + navigator.platform + "</p>";
+    txt+= "<p>用户代理: " + navigator.userAgent + "</p>";
+    txt+= "<p>用户代理语言: " + navigator.systemLanguage + "</p>";
+    document.getElementById("example").innerHTML=txt;
+
+//    访问者的屏幕的详细
+    document.write("总宽度/高度: ");
+    document.write(screen.width + "*" + screen.height);
+    document.write("<br>");
+    document.write("可以宽度/高度: ");
+    document.write(screen.availWidth + "*" + screen.availHeight);
+    document.write("<br>");
+    document.write("颜色深度: ");
+    document.write(screen.colorDepth);
+    document.write("<br>");
+    document.write("颜色分辨率: ");
+    document.write(screen.pixelDepth);
+
+    document.write("历史列表中URL的数量： " + history.length);
+
+    function goBack(){
+        window.history.back()
+    }
+    function goForward(){
+        window.history.forward()
+    }
+
+//    返回主机名和当前url的端口号
+    document.write(location.host);
+//    返回当前页面的整个URL
+    document.write(location.href);
+//    返回当前url的路径名
+    document.write(location.pathname);
+
+
+    function breakout(){
+        if (window.top!=window.self) {
+            window.top.location="tryjs_breakout.html";
+        }
+    }
+
+    document.write(document.cookie);
+</script>
+
+<input type="button" value="返回" onclick="goBack()">
+<p>注意,点击后退按钮在这里不会导致任何行动,因为以前的历史列表中没有该URL</p>
+<input type="button" value="前进" onclick="goForward()">
+<p>注意,点击这里的前进按钮不会导致任何行动,因为历史列表中没有下一个URL。</p>
+<input type="button" onclick="breakout()" value="跳出框架!">
+</body>
+</html>

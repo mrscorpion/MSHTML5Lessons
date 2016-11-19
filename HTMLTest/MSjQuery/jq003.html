@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>jQuery - 设置内容和属性</title>
+    <script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $("#test1").text("Hello world!");
+            });
+            $("#btn2").click(function(){
+                $("#test2").html("<b>Hello world!</b>");
+            });
+            $("#btn3").click(function(){
+                $("#test3").val("apple");
+            });
+
+            $("#btn4").click(function(){
+                $("#test4").html(function(i,origText){
+                    return "旧 html: " + origText + " 新 html: Hello <b>world!</b> (index: " + i + ")";
+                });
+            });
+
+            $("#btn5").click(function(){
+                $("#apple").attr({
+                    "href" : "http://www.baidu.com/jquery",
+                    "title" : "jQuery 教程"
+                });
+            });
+
+
+            function appendText(){
+                var txt1="<p>文本。</p>";              // 使用 HTML 标签创建文本
+                var txt2=$("<p></p>").text("文本。");  // 使用 jQuery 创建文本
+                var txt3=document.createElement("p");
+                txt3.innerHTML="文本。";               // 使用 DOM 创建文本 text with DOM
+                $("body").append(txt1,txt2,txt3);        // 追加新元素
+            }
+
+            $("#delete").click(function(){
+                $("#div1").empty();
+            });
+
+
+            $("button.addCSS").click(function(){
+                $("h1,h2").toggleClass("blue");
+                $("p").css("background-color","yellow");
+//                设置多个 CSS 属性
+                $("button").css({"background-color":"yellow","font-size":"200%"});
+            });
+        });
+    </script>
+
+    <style type="text/css">
+        .important
+        {
+            font-weight:bold;
+            font-size:xx-large;
+        }
+        .blue
+        {
+            color:blue;
+        }
+    </style>
+</head>
+
+<body>
+<p id="test1">这是一个段落。</p>
+<p id="test2">这是另外一个段落。</p>
+<p>输入框: <input type="text" id="test3" value="apple"></p>
+<button id="btn1">设置文本</button>
+<button id="btn2">设置 HTML</button>
+<button id="btn3">设置值</button>
+
+<button id="btn4">设置值-回调函数</button>
+
+<p><a href="http://www.apple.com" id="apple">hhh</a></p>
+<button id="btn5">修改 href 和 title</button>
+<p>点击按钮修改后，可以查看 href 和 title 是否变化。</p>
+
+<p>这是一个段落。</p>
+<button onclick="appendText()">追加文本</button>
+
+<div id="div1" style="height:100px;width:300px;border:1px solid black;background-color:yellow;">
+
+    这是 div 中的一些文本。
+    <p>这是在 div 中的一个段落。</p>
+    <p>这是在 div 中的另外一个段落。</p>
+
+</div>
+<br>
+<button id="delete">清空div元素</button>
+
+<button class="addCSS">添加样式</button>
+<h1>添加样式</h1>
+</body>
+</html>

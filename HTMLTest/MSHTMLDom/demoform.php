@@ -1,0 +1,1 @@
+欢迎 <?php echo $_REQUEST["fname"]; ?><?php echo $_REQUEST["lname"]; ?>!<br>

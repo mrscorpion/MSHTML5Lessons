@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>菜鸟教程(runoob.com)</title>
+    <script>
+        function createDoc(){
+            var doc=document.open("../MSJS/html","replace");
+            var txt="<!DOCTYPE html><html><body>学习 HTML DOM 很有趣!</body></html>";
+            doc.write(txt);
+            doc.close();
+        }
+    </script>
+</head>
+
+<body>
+<input type="button" value="新文档" onclick="createDoc()">
+
+<p>注意write()方法不会在每个语句后面新增一行：</p>
+<pre>
+<script>
+document.write("Hello World!");
+document.write("Have a nice day!");
+</script>
+</pre>
+<p>注意writeln()方法在每个语句后面新增一行：</p>
+<pre>
+<script>
+document.writeln("Hello World!");
+document.writeln("Have a nice day!");
+</script>
+</pre>
+</body>
+</html>

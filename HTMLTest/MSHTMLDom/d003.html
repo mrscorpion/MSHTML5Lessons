@@ -1,0 +1,49 @@
+<html><!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>HTML DOM 导航</title>
+</head>
+<body>
+
+<!--使用三个节点属性：parentNode、firstChild 以及 lastChild ，在文档结构中进行导航。-->
+<p>Hello World!</p>
+<p>The DOM is very useful!</p>
+<div>
+    <p>The DOM is very useful!</p>
+    <p>This example demonstrates node relationships.</p>
+</div>
+<p id="intro">Hello World!</p>
+
+<script>
+    x=document.getElementById("intro");
+    document.write(x.firstChild.nodeValue);
+</script>
+
+<script>
+    x=document.getElementsByTagName("p");
+    document.write("The innerHTML of the second paragraph is: " + x[1].innerHTML);
+
+    x=document.getElementsByTagName("p");
+
+    for (i=0;i<x.length;i++)
+    {
+        document.write(x[i].innerHTML);
+        document.write("<br />");
+    }
+</script>
+
+<script>
+    alert(document.body.innerHTML);
+</script>
+
+
+
+<hr>
+<h2>getElementById 是一个方法，而 childNodes 和 nodeValue 是属性。</h2>
+<p id="intro2">嘿嘿嘿</p>
+<script>
+    var txt=document.getElementById("intro2").childNodes[0].nodeValue;
+    document.write(txt);
+</script>
+</body>
+</html>

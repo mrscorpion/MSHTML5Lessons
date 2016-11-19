@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>表单</title>
+</head>
+<body>
+
+<form id="frm1" action="demoform.php">
+    第一个名字: <input type="text" name="fname" value="Donald"><br>
+    第二个名字: <input type="text" name="lname" value="Duck"><br>
+    <input type="submit" value="提交">
+</form>
+<p>返回表单中每个元素的值：</p>
+<script>
+    var x=document.getElementById("frm1");
+    for (var i=0;i<x.length;i++){
+        document.write(x.elements[i].value);
+        document.write("<br>");
+    }
+</script>
+
+</body>
+</html>

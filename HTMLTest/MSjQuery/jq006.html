@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>get 和 post</title>
+    <script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js">
+    </script>
+    <script>
+
+//        <!--noConflict() 方法会释放会 $ 标识符的控制，这样其他脚本就可以使用它了。-->
+//        <!--如果你的 jQuery 代码块使用 $ 简写，并且您不愿意改变这个快捷方式，
+//        那么您可以把 $ 符号作为变量传递给 ready 方法。
+//        这样就可以在函数内使用 $ 符号了 - 而在函数外，依旧不得不使用 "jQuery"-->
+        $.noConflict();
+        jQuery(document).ready(function(){
+            $("button.get").click(function(){
+                $.get("demo_test.php",function(data,status){
+                    alert("数据: " + data + "\n状态: " + status);
+                });
+            });
+
+            $("button.post").click(function(){
+                $.post("demo_test_post.php",{
+                            name:"apple",
+                            url:"http://www.apple.com"
+                        },
+                        function(data,status){
+                            alert("数据: \n" + data + "\n状态: " + status);
+                        });
+            });
+        });
+    </script>
+</head>
+<body>
+
+<button class="get">发送一个 HTTP GET 请求并获取返回结果</button>
+<button class="post">发送一个 HTTP POST 请求页面并获取返回内容</button>
+</body>
+</html>

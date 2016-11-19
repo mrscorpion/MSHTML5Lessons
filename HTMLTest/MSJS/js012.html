@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript - 测试 Prototype</title>
+    <script
+            src="http://apps.bdimg.com/libs/prototype/1.7.1.0/prototype.js">
+    </script>
+    <script>
+        function myFunction(){
+            $("#h01").attr("style","color:red").html("Hello jQuery")
+        }
+        function myFunction2(){
+            $("#h02").html("Hello jQuery")
+        }
+        Event.observe(window,"load",myFunction);
+        Event.observe(window,"load",myFunction2);
+    </script>
+</head>
+<body>
+
+<h1 id="h01"></h1>
+<h1 id="h02"></h1>
+</body>
+</html>

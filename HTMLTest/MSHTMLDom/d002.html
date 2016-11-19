@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>HTML DOM - 元素</title>
+</head>
+<body onload="checkCookies()">
+<script>
+    function checkCookies()
+    {
+        if (navigator.cookieEnabled==true)
+        {
+            alert("Cookies are enabled")
+        }
+        else
+        {
+            alert("Cookies are not enabled")
+        }
+    }
+</script>
+<p>An alert box should tell you if your browser has enabled cookies or not.</p>
+
+
+
+<div id="div1">
+    <p id="p1">这是一个段落。</p>
+    <p id="p2">这是另一个段落。</p>
+</div>
+<script>
+    <!---->
+    var para=document.createElement("p");
+    var node=document.createTextNode("这是一个新段落。");
+    para.appendChild(node);
+    var element=document.getElementById("div1");
+    element.appendChild(para);
+
+
+    var para=document.createElement("p");
+    var node=document.createTextNode("This is new2.");
+    para.appendChild(node);
+    var element=document.getElementById("div1");
+    var child=document.getElementById("p1");
+    element.insertBefore(para,child);
+
+// delete
+    var parent=document.getElementById("div1");
+    var child=document.getElementById("p2");
+//    parent.removeChild(child);
+    // 方式2
+    child.parentNode.removeChild(child);
+
+// replace
+    var para=document.createElement("p");
+    var node=document.createTextNode("这是一个替换段落.");
+    para.appendChild(node);
+    var parent=document.getElementById("div1");
+    var child=document.getElementById("p1");
+    parent.replaceChild(para,child);
+</script>
+
+<h1 onclick="this.innerHTML='Ooops!'">点击文本!</h1>
+
+<hr>
+<script>
+    function changetext(id)
+    {
+        id.innerHTML="new Ooops!";
+    }
+</script>
+<h1 onclick="changetext(this)">Click on this text!</h1>
+
+<hr>
+<h1>事件属性</h1>
+<p>Click the button to execute the <em>displayDate()</em> function.</p>
+<button onclick="displayDate()">Try it</button>
+<script>
+    function displayDate()
+    {
+        document.getElementById("demo").innerHTML=Date();
+    }
+</script>
+<p id="demo">demo1</p>
+
+<h2>方式2</h2>
+<button id="myBtn">Try it</button>
+<script>
+    document.getElementById("myBtn").onclick=function(){displayDate2()};
+    function displayDate2()
+    {
+        document.getElementById("demo2").innerHTML=Date();
+    }
+</script>
+<p id="demo2">demo2</p>
+
+<hr>
+<script>
+    function myFunction(){
+        var x=document.getElementById("fname");
+        x.value=x.value.toUpperCase();
+    }
+</script>
+输入你的名字: <input type="text" id="fname" onchange="myFunction()">
+<p>当你离开输入框后，函数将被触发，将小写字母转为大写字母。</p>
+
+<hr>
+<div onmouseover="mOver(this)" onmouseout="mOut(this)"
+     style="background-color:#D94A38;width:120px;height:20px;padding:40px;">Mouse Over Me</div>
+<script>
+    function mOver(obj)
+    {
+        obj.innerHTML="Thank You"
+    }
+
+    function mOut(obj)
+    {
+        obj.innerHTML="Mouse Over Me"
+    }
+</script>
+
+<hr>
+<div onmousedown="mDown(this)" onmouseup="mUp(this)"
+     style="background-color:#D94A38;width:90px;height:20px;padding:40px;">Click Me</div>
+<script>
+    function mDown(obj)
+    {
+        obj.style.backgroundColor="#1ec5e5";
+        obj.innerHTML="Release Me"
+    }
+
+    function mUp(obj)
+    {
+        obj.style.backgroundColor="#D94A38";
+        obj.innerHTML="Thank You"
+    }
+</script>
+</body>
+</html>

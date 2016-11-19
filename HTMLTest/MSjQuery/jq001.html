@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>jquery</title>
+    <script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js">
+    </script>
+    <script>
+//       文档就绪事件 ： 防止文档在完全加载（就绪）之前运行 jQuery 代码
+// 简洁写法$(function(){开始写 jQuery 代码...});
+        $(document).ready(function(){
+            $("p").click(function(){
+                $(this).hide();
+            });
+//          隐藏所有 id="test" 的元素
+            $("h2").click(function () {
+                $("#test").hide();
+            });
+
+            $("button.test").click(function(){
+                $(".test").hide();
+            });
+
+//            选取偶数位置的 <tr> 元素
+            $("tr:even").css("background-color","yellow");
+
+            $("h3.test").dblclick(function(){
+                $(this).hide();
+            });
+
+            $("#p1").mouseenter(function(){
+                alert('您的鼠标移到了 id="p1" 的元素上!');
+            });
+
+            $("input").focus(function(){
+                $(this).css("background-color","#cccccc");
+            });
+            $("input").blur(function(){
+                $(this).css("background-color","#ffffff");
+            });
+
+
+            $("#hide").click(function(){
+                $("p.hideshow").hide(1000);
+            });
+            $("#show").click(function(){
+                $("p.hideshow").show();
+            });
+
+            $("#toggle").click(function(){
+                $("p").toggle();
+            });
+        });
+    </script>
+</head>
+<body>
+<p>如果你点我，我就会消失。</p>
+<p>继续点我!</p>
+<p>接着点我!</p>
+<h2 id="test">我是id为test的h2</h2>
+<h2>我不是id的h2</h2>
+<h3 class="test">我是class为test的p，dblclick双击消失</h3>
+
+<button class="test">点我,我自己消失</button>
+
+<h1>欢迎访问我的主页</h1>
+<table border="1">
+    <tr>
+        <th>网站名</th>
+        <th>网址</th>
+    </tr>
+    <tr>
+        <td>Google</td>
+        <td>http://www.google.com</td>
+    </tr>
+    <tr>
+        <td>Baidu</td>
+        <td>http://www.baidu.com</td>
+    </tr>
+    <tr>
+        <td>apple</td>
+        <td>http://www.apple.com</td>
+    </tr>
+    <tr>
+        <td>淘宝</td>
+        <td>http://www.taobao.com</td>
+    </tr>
+    <tr>
+        <td>Facebook</td>
+        <td>http://www.facebook.com</td>
+    </tr>
+</table>
+
+<h2>独立文件中使用 jQuery 函数</h2>
+<pre>
+    如果网站包含许多页面，并且希望jQuery 函数易于维护，那么请把jQuery 函数放到独立的 .js 文件中。
+当我们在教程中演示 jQuery 时，会将函数直接添加到 <head> 部分中。
+    不过，把它们放到一个单独的文件中会更好，就像这样（通过 src 属性来引用文件）
+</pre>
+<script src="my_jquery_functions.js"></script>
+<p>List 1:</p>
+<ul>
+    <li>Coffee</li>
+    <li>Milk</li>
+    <li>Tea</li>
+</ul>
+
+<p>List 2:</p>
+<ul>
+    <li>Coffee</li>
+    <li>Milk</li>
+    <li>Tea</li>
+</ul>
+<button class="tap">点击试试</button>
+
+<p id="p1">鼠标指针进入此处，会看到弹窗。</p>
+
+<h2>blur() - 当元素失去焦点时，发生 blur 事件。</h2>
+Name: <input type="text" name="fullname"><br>
+Email: <input type="text" name="email">
+
+<p class="hideshow">如果你点击“隐藏” 按钮，我将会消失。</p>
+<button id="hide">隐藏</button>
+<button id="show">显示</button>
+<button id="toggle">显示/隐藏</button>
+</body>
+</html>
